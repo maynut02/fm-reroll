@@ -776,6 +776,12 @@
         "template": [
             "../image/battle1-4.png"
         ],
+        "target": [
+            1182,
+            378,
+            0,
+            0
+        ],
         "__yamaape": {
             "position": {
                 "x": 2513,
@@ -2501,6 +2507,9 @@
         },
         "next": [
             "battle3-2"
+        ],
+        "interrupt": [
+            "battle3-1-fix"
         ]
     }
 }
