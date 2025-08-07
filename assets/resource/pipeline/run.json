@@ -66,7 +66,7 @@
             0
         ],
         "timeout": 20000,
-        "focus": "task1-1",
+        "focus": "task1-1 완료",
         "__yamaape": {
             "position": {
                 "x": 1706,
@@ -99,7 +99,7 @@
             0
         ],
         "duration": 1000,
-        "focus": "task1-swipe",
+        "focus": "task1-swipe 완료",
         "__yamaape": {
             "position": {
                 "x": 1962,
@@ -119,7 +119,7 @@
         "template": [
             "../image/task1-2.png"
         ],
-        "focus": "task1-2",
+        "focus": "task1-2 완료",
         "__yamaape": {
             "position": {
                 "x": 2234,
@@ -136,7 +136,7 @@
         "template": [
             "../image/task1-3.png"
         ],
-        "focus": "task1-3",
+        "focus": "task1-3 완료",
         "__yamaape": {
             "position": {
                 "x": 2510,
@@ -159,7 +159,8 @@
             0,
             0
         ],
-        "focus": "task2-1",
+        "focus": "task2-1 완료",
+        "post_delay": 1000,
         "__yamaape": {
             "position": {
                 "x": 1699,
@@ -173,13 +174,14 @@
     "task2-2": {
         "recognition": "DirectHit",
         "action": "Click",
-        "focus": "task2-2",
+        "focus": "task2-2 완료",
         "target": [
             661,
             583,
             0,
             0
         ],
+        "post_delay": 1000,
         "__yamaape": {
             "position": {
                 "x": 1972,
@@ -212,7 +214,7 @@
             0
         ],
         "duration": 1000,
-        "focus": "task2-swipe",
+        "focus": "task2-swipe 완료",
         "__yamaape": {
             "position": {
                 "x": 2245,
@@ -233,7 +235,7 @@
             "../image/task2-3.png"
         ],
         "post_delay": 10000,
-        "focus": "task2-3",
+        "focus": "task2-3 완료",
         "__yamaape": {
             "position": {
                 "x": 2507,
@@ -263,7 +265,7 @@
             0
         ],
         "duration": 3000,
-        "focus": "task3-swipe",
+        "focus": "task3-swipe 완료",
         "__yamaape": {
             "position": {
                 "x": 1696,
@@ -290,7 +292,7 @@
             0
         ],
         "inverse": true,
-        "focus": "task3-1",
+        "focus": "task3-1 완료",
         "__yamaape": {
             "position": {
                 "x": 1967,
@@ -310,7 +312,7 @@
         "template": [
             "../image/task3-2.png"
         ],
-        "focus": "task3-2",
+        "focus": "task3-2 완료",
         "__yamaape": {
             "position": {
                 "x": 2242,
@@ -336,7 +338,7 @@
             0,
             0
         ],
-        "focus": "task3-3",
+        "focus": "task3-3 완료",
         "__yamaape": {
             "position": {
                 "x": 2529,
@@ -356,7 +358,7 @@
         "template": [
             "../image/storytalk.png"
         ],
-        "focus": "task3-4",
+        "focus": "task3-4 완료",
         "__yamaape": {
             "position": {
                 "x": 2789,
@@ -379,7 +381,7 @@
             0,
             0
         ],
-        "focus": "task3-5",
+        "focus": "task3-5 완료",
         "__yamaape": {
             "position": {
                 "x": 3060,
@@ -399,7 +401,7 @@
             0,
             0
         ],
-        "focus": "task3-6",
+        "focus": "task3-6 완료",
         "__yamaape": {
             "position": {
                 "x": 3320,
@@ -419,7 +421,7 @@
         "template": [
             "../image/task4.png"
         ],
-        "focus": "task4",
+        "focus": "task4 완료",
         "__yamaape": {
             "position": {
                 "x": 1704,
@@ -437,7 +439,7 @@
         "template": [
             "../image/task4-1.png"
         ],
-        "focus": "task4-1",
+        "focus": "task4-1 완료",
         "__yamaape": {
             "position": {
                 "x": 1964,
@@ -454,7 +456,7 @@
         "template": [
             "../image/task4-1.png"
         ],
-        "focus": "task4-2",
+        "focus": "task4-2 완료",
         "__yamaape": {
             "position": {
                 "x": 2224,
@@ -471,7 +473,7 @@
         "template": [
             "../image/task4-3.png"
         ],
-        "focus": "task4-3",
+        "focus": "task4-3 완료",
         "__yamaape": {
             "position": {
                 "x": 2484,
@@ -491,7 +493,7 @@
             0,
             0
         ],
-        "focus": "task5-1",
+        "focus": "task5-1 완료",
         "__yamaape": {
             "position": {
                 "x": 1688,
@@ -512,7 +514,7 @@
             "../image/skip.png"
         ],
         "pre_delay": 1000,
-        "focus": "task5-skip",
+        "focus": "task5-skip 완료",
         "__yamaape": {
             "position": {
                 "x": 1976,
@@ -529,7 +531,7 @@
         "template": [
             "../image/skip-select.png"
         ],
-        "focus": "task5-skip-select",
+        "focus": "task5-skip-select 완료",
         "__yamaape": {
             "position": {
                 "x": 2245,
@@ -546,7 +548,7 @@
         "template": [
             "../image/task6-1.png"
         ],
-        "focus": "task6-1",
+        "focus": "task6-1 완료",
         "__yamaape": {
             "position": {
                 "x": 1686,
@@ -563,7 +565,7 @@
         "template": [
             "../image/task6-2.png"
         ],
-        "focus": "task6-2",
+        "focus": "task6-2 완료",
         "__yamaape": {
             "position": {
                 "x": 1946,
@@ -580,7 +582,7 @@
         "template": [
             "../image/task6-3.png"
         ],
-        "focus": "task6-3",
+        "focus": "task6-3 완료",
         "__yamaape": {
             "position": {
                 "x": 2206,
@@ -610,7 +612,7 @@
             0
         ],
         "duration": 3000,
-        "focus": "task6-swipe",
+        "focus": "task6-swipe 완료",
         "__yamaape": {
             "position": {
                 "x": 2466,
@@ -630,7 +632,7 @@
         "template": [
             "../image/skip.png"
         ],
-        "focus": "task7-skip",
+        "focus": "task7-skip 완료",
         "__yamaape": {
             "position": {
                 "x": 1674,
@@ -651,7 +653,7 @@
             "../image/skip-select.png"
         ],
         "post_delay": 20000,
-        "focus": "task7-skip-select",
+        "focus": "task7-skip-select 완료",
         "__yamaape": {
             "position": {
                 "x": 1952,
@@ -668,7 +670,7 @@
         "template": [
             "../image/skip.png"
         ],
-        "focus": "task8-skip",
+        "focus": "task8-skip 완료",
         "__yamaape": {
             "position": {
                 "x": 2255,
@@ -688,7 +690,7 @@
         "template": [
             "../image/skip-select.png"
         ],
-        "focus": "task87-skip-select",
+        "focus": "task87-skip-select 완료",
         "__yamaape": {
             "position": {
                 "x": 2539,
@@ -705,7 +707,7 @@
         "template": [
             "../image/battlespeed.png"
         ],
-        "focus": "battlespeed",
+        "focus": "battlespeed 완료",
         "__yamaape": {
             "position": {
                 "x": 2799,
@@ -725,7 +727,7 @@
             0,
             0
         ],
-        "focus": "battle1-fix",
+        "focus": "battle1-fix 완료",
         "__yamaape": {
             "position": {
                 "x": 3077,
@@ -751,7 +753,7 @@
             0,
             0
         ],
-        "focus": "battle1-1",
+        "focus": "battle1-1 완료",
         "__yamaape": {
             "position": {
                 "x": 1674,
@@ -771,7 +773,7 @@
             0,
             0
         ],
-        "focus": "battle1-2",
+        "focus": "battle1-2 완료",
         "__yamaape": {
             "position": {
                 "x": 1950,
@@ -797,7 +799,7 @@
             0,
             0
         ],
-        "focus": "battle1-3",
+        "focus": "battle1-3 완료",
         "__yamaape": {
             "position": {
                 "x": 2253,
@@ -820,7 +822,7 @@
             0,
             0
         ],
-        "focus": "battle1-4",
+        "focus": "battle1-4 완료",
         "__yamaape": {
             "position": {
                 "x": 2513,
@@ -837,7 +839,7 @@
         "template": [
             "../image/battle1-5.png"
         ],
-        "focus": "battle1-5",
+        "focus": "battle1-5 완료",
         "__yamaape": {
             "position": {
                 "x": 2773,
@@ -854,7 +856,7 @@
         "template": [
             "../image/battle1-4.png"
         ],
-        "focus": "battle1-6",
+        "focus": "battle1-6 완료",
         "__yamaape": {
             "position": {
                 "x": 3057,
@@ -871,7 +873,7 @@
         "template": [
             "../image/battle1-7.png"
         ],
-        "focus": "battle1-7",
+        "focus": "battle1-7 완료",
         "__yamaape": {
             "position": {
                 "x": 3317,
@@ -888,7 +890,7 @@
         "template": [
             "../image/battle1-8.png"
         ],
-        "focus": "battle1-8",
+        "focus": "battle1-8 완료",
         "__yamaape": {
             "position": {
                 "x": 3577,
@@ -911,7 +913,7 @@
             0,
             0
         ],
-        "focus": "task9-1",
+        "focus": "task9-1 완료",
         "__yamaape": {
             "position": {
                 "x": 1677,
@@ -931,7 +933,7 @@
         "template": [
             "../image/skip.png"
         ],
-        "focus": "task9-skip",
+        "focus": "task9-skip 완료",
         "__yamaape": {
             "position": {
                 "x": 1944,
