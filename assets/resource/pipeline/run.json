@@ -1,7 +1,8 @@
 {
     "__yamaape_config_rub": {
         "filename": "rub",
-        "version": "v0.3.4"
+        "version": "v0.3.4",
+        "export": ""
     },
     "login": {
         "recognition": "TemplateMatch",
@@ -71,11 +72,11 @@
                 "y": 297
             }
         },
-        "interrupt": [
-            "task1-1"
-        ],
         "next": [
             "task1-swipe"
+        ],
+        "interrupt": [
+            "task1-1"
         ]
     },
     "task1-swipe": {
@@ -103,11 +104,27 @@
                 "y": 297
             }
         },
-        "interrupt": [
-            "task1-swipe"
-        ],
         "next": [
             "task1-2"
+        ],
+        "interrupt": [
+            "task1-swipe"
+        ]
+    },
+    "task1-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task1-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2236,
+                "y": 297
+            }
+        },
+        "next": [
+            "task1-3"
         ]
     },
     "task1-3": {
@@ -144,11 +161,11 @@
                 "y": 543
             }
         },
-        "interrupt": [
-            "task2-1"
-        ],
         "next": [
             "task2-2"
+        ],
+        "interrupt": [
+            "task2-1"
         ]
     },
     "task2-2": {
@@ -356,6 +373,28 @@
             "task3-6"
         ]
     },
+    "task3-6": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3320,
+                "y": 785
+            }
+        },
+        "next": [
+            "task4"
+        ],
+        "interrupt": [
+            "task3-6"
+        ]
+    },
     "task4": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -421,28 +460,6 @@
             "task5-1"
         ]
     },
-    "task3-6": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            661,
-            583,
-            0,
-            0
-        ],
-        "__yamaape": {
-            "position": {
-                "x": 3320,
-                "y": 785
-            }
-        },
-        "interrupt": [
-            "task3-6"
-        ],
-        "next": [
-            "task4"
-        ]
-    },
     "task5-1": {
         "recognition": "DirectHit",
         "action": "Click",
@@ -458,11 +475,11 @@
                 "y": 1317
             }
         },
-        "interrupt": [
-            "task5-1"
-        ],
         "next": [
             "task5-skip"
+        ],
+        "interrupt": [
+            "task5-1"
         ]
     },
     "task5-skip": {
@@ -665,20 +682,26 @@
             "battle1-fix"
         ]
     },
-    "task1-2": {
-        "recognition": "TemplateMatch",
+    "battle1-fix": {
+        "recognition": "DirectHit",
         "action": "Click",
-        "template": [
-            "../image/task1-2.png"
+        "target": [
+            895,
+            622,
+            0,
+            0
         ],
         "__yamaape": {
             "position": {
-                "x": 2236,
-                "y": 297
+                "x": 3077,
+                "y": 1918
             }
         },
         "next": [
-            "task1-3"
+            "battle1-1"
+        ],
+        "interrupt": [
+            "battle1-fix"
         ]
     },
     "battle1-1": {
@@ -718,11 +741,11 @@
                 "y": 2169
             }
         },
-        "interrupt": [
-            "battle1-2"
-        ],
         "next": [
             "battle1-3"
+        ],
+        "interrupt": [
+            "battle1-2"
         ]
     },
     "battle1-3": {
@@ -845,11 +868,11 @@
                 "y": 2411
             }
         },
-        "interrupt": [
-            "task9-1"
-        ],
         "next": [
             "task9-skip"
+        ],
+        "interrupt": [
+            "task9-1"
         ]
     },
     "task9-skip": {
@@ -864,11 +887,11 @@
                 "y": 2417
             }
         },
-        "interrupt": [
-            "task9-skip"
-        ],
         "next": [
             "task9-skip-select"
+        ],
+        "interrupt": [
+            "task9-skip"
         ]
     },
     "task9-skip-select": {
@@ -906,11 +929,11 @@
                 "y": 2649
             }
         },
-        "interrupt": [
-            "task10-1"
-        ],
         "next": [
             "task10-2"
+        ],
+        "interrupt": [
+            "task10-1"
         ]
     },
     "task10-2": {
@@ -947,11 +970,11 @@
                 "y": 2651
             }
         },
-        "interrupt": [
-            "task10-3"
-        ],
         "next": [
             "task10-4"
+        ],
+        "interrupt": [
+            "task10-3"
         ]
     },
     "task10-4": {
@@ -988,11 +1011,11 @@
                 "y": 2645
             }
         },
-        "interrupt": [
-            "task10-5"
-        ],
         "next": [
             "task10-skip"
+        ],
+        "interrupt": [
+            "task10-5"
         ]
     },
     "task10-skip": {
@@ -1049,11 +1072,11 @@
                 "y": 2904
             }
         },
-        "interrupt": [
-            "task11-1"
-        ],
         "next": [
             "task11-skip"
+        ],
+        "interrupt": [
+            "task11-1"
         ]
     },
     "task11-skip": {
@@ -1068,11 +1091,11 @@
                 "y": 2905
             }
         },
-        "interrupt": [
-            "task11-skip"
-        ],
         "next": [
             "task11-skip-select"
+        ],
+        "interrupt": [
+            "task11-skip"
         ]
     },
     "task11-skip-select": {
@@ -1123,11 +1146,11 @@
                 "y": 3167
             }
         },
-        "interrupt": [
-            "battle2-2"
-        ],
         "next": [
             "battle2-3"
+        ],
+        "interrupt": [
+            "battle2-2"
         ]
     },
     "battle2-3": {
@@ -1142,11 +1165,11 @@
                 "y": 3167
             }
         },
-        "interrupt": [
-            "battle2-3"
-        ],
         "next": [
             "battle2-4"
+        ],
+        "interrupt": [
+            "battle2-3"
         ]
     },
     "battle2-4": {
@@ -1183,11 +1206,11 @@
                 "y": 3168
             }
         },
-        "interrupt": [
-            "battle2-5"
-        ],
         "next": [
             "battle2-6"
+        ],
+        "interrupt": [
+            "battle2-5"
         ]
     },
     "battle2-6": {
@@ -1208,11 +1231,11 @@
                 "y": 3168
             }
         },
-        "interrupt": [
-            "battle2-6"
-        ],
         "next": [
             "task12-skip"
+        ],
+        "interrupt": [
+            "battle2-6"
         ]
     },
     "task12-skip": {
@@ -1284,11 +1307,11 @@
                 "y": 3596
             }
         },
-        "interrupt": [
-            "task13-2"
-        ],
         "next": [
             "task13-3"
+        ],
+        "interrupt": [
+            "task13-2"
         ]
     },
     "task13-3": {
@@ -1303,11 +1326,11 @@
                 "y": 3596
             }
         },
-        "interrupt": [
-            "task13-3"
-        ],
         "next": [
             "task13-4"
+        ],
+        "interrupt": [
+            "task13-3"
         ]
     },
     "task13-4": {
@@ -1328,11 +1351,11 @@
                 "y": 3596
             }
         },
-        "interrupt": [
-            "task13-4"
-        ],
         "next": [
             "task13-skip"
+        ],
+        "interrupt": [
+            "task13-4"
         ]
     },
     "task13-skip": {
@@ -1457,11 +1480,11 @@
                 "y": 4066
             }
         },
-        "interrupt": [
-            "task15-3"
-        ],
         "next": [
             "task15-4"
+        ],
+        "interrupt": [
+            "task15-3"
         ]
     },
     "task15-4": {
@@ -1527,11 +1550,11 @@
                 "y": 4349
             }
         },
-        "interrupt": [
-            "task16-1"
-        ],
         "next": [
             "task16-2"
+        ],
+        "interrupt": [
+            "task16-1"
         ]
     },
     "task16-2": {
@@ -1546,11 +1569,11 @@
                 "y": 4349
             }
         },
-        "interrupt": [
-            "task16-2"
-        ],
         "next": [
             "task16-3"
+        ],
+        "interrupt": [
+            "task16-2"
         ]
     },
     "task16-3": {
@@ -1606,11 +1629,11 @@
                 "y": 4349
             }
         },
-        "interrupt": [
-            "task16-5"
-        ],
         "next": [
             "task16-6"
+        ],
+        "interrupt": [
+            "task16-5"
         ]
     },
     "task16-6": {
@@ -1671,7 +1694,7 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/battlespeed2.png"
+            "../image/battle3-7.png"
         ],
         "target": [
             888,
@@ -1681,15 +1704,12 @@
         ],
         "__yamaape": {
             "position": {
-                "x": 1680,
-                "y": 4587
+                "x": 1412,
+                "y": 4584
             }
         },
         "next": [
-            "battle3-2"
-        ],
-        "interrupt": [
-            "battle3-1"
+            "battle3-1-fix"
         ]
     },
     "battle3-2": {
@@ -1704,7 +1724,6 @@
             0,
             0
         ],
-        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 1940,
@@ -1713,6 +1732,9 @@
         },
         "next": [
             "battle3-3"
+        ],
+        "interrupt": [
+            "battle3-2"
         ]
     },
     "battle3-3": {
@@ -1721,7 +1743,6 @@
         "template": [
             "../image/battle3-3.png"
         ],
-        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 2200,
@@ -1730,6 +1751,9 @@
         },
         "next": [
             "battle3-4"
+        ],
+        "interrupt": [
+            "battle3-3"
         ]
     },
     "battle3-4": {
@@ -1770,6 +1794,22 @@
             "battle3-5"
         ]
     },
+    "battle3-4-fix": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            886,
+            630,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2720,
+                "y": 4743
+            }
+        }
+    },
     "battle3-6": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -1801,11 +1841,11 @@
                 "y": 4587
             }
         },
-        "interrupt": [
-            "battle3-7"
-        ],
         "next": [
             "task17-2"
+        ],
+        "interrupt": [
+            "battle3-7"
         ]
     },
     "task17-2": {
@@ -1912,11 +1952,11 @@
                 "y": 5082
             }
         },
-        "interrupt": [
-            "task18-3"
-        ],
         "next": [
             "task18-4"
+        ],
+        "interrupt": [
+            "task18-3"
         ]
     },
     "task18-4": {
@@ -1931,11 +1971,11 @@
                 "y": 5082
             }
         },
-        "interrupt": [
-            "task18-4"
-        ],
         "next": [
             "task18-5"
+        ],
+        "interrupt": [
+            "task18-4"
         ]
     },
     "task18-5": {
@@ -1969,11 +2009,11 @@
                 "y": 5082
             }
         },
-        "interrupt": [
-            "task18-6"
-        ],
         "next": [
             "task18-7"
+        ],
+        "interrupt": [
+            "task18-6"
         ]
     },
     "task18-7": {
@@ -2004,11 +2044,11 @@
                 "y": 5082
             }
         },
-        "interrupt": [
-            "task18-8"
-        ],
         "next": [
             "task19-1"
+        ],
+        "interrupt": [
+            "task18-8"
         ]
     },
     "task19-1": {
@@ -2216,6 +2256,22 @@
             "task21-4"
         ]
     },
+    "task21-3-fix": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-3-fix.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2371,
+                "y": 5888
+            }
+        },
+        "next": [
+            "task21-8"
+        ]
+    },
     "task21-4": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -2228,51 +2284,28 @@
                 "y": 5670
             }
         },
-        "interrupt": [
-            "task21-4"
-        ],
         "next": [
             "task21-5"
         ]
     },
     "task21-5": {
-        "recognition": "TemplateMatch",
+        "recognition": "DirectHit",
         "action": "Click",
-        "template": [
-            "../image/task21-4.png"
-        ],
-        "inverse": true,
         "target": [
-            640,
-            367,
+            1222,
+            46,
             0,
             0
         ],
         "__yamaape": {
             "position": {
-                "x": 2729,
+                "x": 2723,
                 "y": 5670
             }
         },
-        "next": [
-            "task21-6"
-        ],
         "interrupt": [
             "task21-5"
-        ]
-    },
-    "task21-6": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/task21-6.png"
         ],
-        "__yamaape": {
-            "position": {
-                "x": 2989,
-                "y": 5670
-            }
-        },
         "next": [
             "task21-7",
             "task21-3"
@@ -2286,8 +2319,8 @@
         ],
         "__yamaape": {
             "position": {
-                "x": 3249,
-                "y": 5670
+                "x": 2972,
+                "y": 5665
             }
         },
         "next": [
@@ -2302,8 +2335,8 @@
         ],
         "__yamaape": {
             "position": {
-                "x": 2834,
-                "y": 5978
+                "x": 2633,
+                "y": 5891
             }
         },
         "next": [
@@ -2328,7 +2361,7 @@
     },
     "task22-2": {
         "recognition": "TemplateMatch",
-        "action": "DoNothing",
+        "action": "StopTask",
         "template": [
             "../image/task22-2.png"
         ],
@@ -2338,60 +2371,6 @@
                 "y": 6136
             }
         }
-    },
-    "battle1-fix": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            895,
-            622,
-            0,
-            0
-        ],
-        "__yamaape": {
-            "position": {
-                "x": 3077,
-                "y": 1918
-            }
-        },
-        "next": [
-            "battle1-1"
-        ],
-        "interrupt": [
-            "battle1-fix"
-        ]
-    },
-    "battle3-4-fix": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            886,
-            630,
-            0,
-            0
-        ],
-        "__yamaape": {
-            "position": {
-                "x": 2720,
-                "y": 4743
-            }
-        }
-    },
-    "task21-3-fix": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/task21-3-fix.png"
-        ],
-        "__yamaape": {
-            "position": {
-                "x": 2490,
-                "y": 5992
-            }
-        },
-        "next": [
-            "task21-8"
-        ]
     },
     "restart-1": {
         "recognition": "TemplateMatch",
@@ -2503,6 +2482,25 @@
         },
         "next": [
             "login"
+        ]
+    },
+    "battle3-1-fix": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            888,
+            630,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1684,
+                "y": 4606
+            }
+        },
+        "next": [
+            "battle3-2"
         ]
     }
 }
