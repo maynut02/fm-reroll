@@ -2385,10 +2385,10 @@
             }
         },
         "next": [
-            "restarat-2"
+            "restart-2"
         ]
     },
-    "restarat-2": {
+    "restart-2": {
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
