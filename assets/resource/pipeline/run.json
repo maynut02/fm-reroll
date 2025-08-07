@@ -188,7 +188,7 @@
         "recognition": "TemplateMatch",
         "action": "Swipe",
         "template": [
-            "../image/storymove.png"
+            "../image/task2-swipe-fix.png"
         ],
         "begin": [
             300,
