@@ -1,0 +1,2508 @@
+{
+    "__yamaape_config_rub": {
+        "filename": "rub",
+        "version": "v0.3.4"
+    },
+    "login": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/login.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 936,
+                "y": 297
+            }
+        },
+        "next": [
+            "login-select"
+        ]
+    },
+    "login-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/login-select.png"
+        ],
+        "post_delay": 2000,
+        "__yamaape": {
+            "position": {
+                "x": 1196,
+                "y": 297
+            }
+        },
+        "next": [
+            "game-start"
+        ]
+    },
+    "game-start": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/game-start.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1456,
+                "y": 297
+            }
+        },
+        "next": [
+            "task1-1"
+        ]
+    },
+    "task1-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storybag.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "timeout": 20000,
+        "__yamaape": {
+            "position": {
+                "x": 1717,
+                "y": 297
+            }
+        },
+        "interrupt": [
+            "task1-1"
+        ],
+        "next": [
+            "task1-swipe"
+        ]
+    },
+    "task1-swipe": {
+        "recognition": "TemplateMatch",
+        "action": "Swipe",
+        "template": [
+            "../image/storymove.png"
+        ],
+        "begin": [
+            300,
+            550,
+            0,
+            0
+        ],
+        "end": [
+            800,
+            550,
+            0,
+            0
+        ],
+        "duration": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1976,
+                "y": 297
+            }
+        },
+        "interrupt": [
+            "task1-swipe"
+        ],
+        "next": [
+            "task1-2"
+        ]
+    },
+    "task1-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task1-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2496,
+                "y": 297
+            }
+        },
+        "next": [
+            "task2-1"
+        ]
+    },
+    "task2-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storybag.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1699,
+                "y": 543
+            }
+        },
+        "interrupt": [
+            "task2-1"
+        ],
+        "next": [
+            "task2-2"
+        ]
+    },
+    "task2-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task2-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1972,
+                "y": 543
+            }
+        },
+        "next": [
+            "task2-swipe"
+        ]
+    },
+    "task2-swipe": {
+        "recognition": "TemplateMatch",
+        "action": "Swipe",
+        "template": [
+            "../image/storymove.png"
+        ],
+        "begin": [
+            300,
+            550,
+            0,
+            0
+        ],
+        "end": [
+            800,
+            550,
+            0,
+            0
+        ],
+        "duration": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2242,
+                "y": 541
+            }
+        },
+        "next": [
+            "task2-3"
+        ],
+        "interrupt": [
+            "task2-swipe"
+        ]
+    },
+    "task2-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task2-3.png"
+        ],
+        "post_delay": 10000,
+        "__yamaape": {
+            "position": {
+                "x": 2507,
+                "y": 539
+            }
+        },
+        "next": [
+            "task3-swipe"
+        ]
+    },
+    "task3-swipe": {
+        "recognition": "TemplateMatch",
+        "action": "Swipe",
+        "template": [
+            "../image/storymove.png"
+        ],
+        "begin": [
+            300,
+            550,
+            0,
+            0
+        ],
+        "end": [
+            800,
+            550,
+            0,
+            0
+        ],
+        "duration": 3000,
+        "__yamaape": {
+            "position": {
+                "x": 1696,
+                "y": 792
+            }
+        },
+        "next": [
+            "task3-1"
+        ],
+        "interrupt": [
+            "task3-swipe"
+        ]
+    },
+    "task3-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storymove.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "inverse": true,
+        "__yamaape": {
+            "position": {
+                "x": 1967,
+                "y": 788
+            }
+        },
+        "next": [
+            "task3-2"
+        ],
+        "interrupt": [
+            "task3-1"
+        ]
+    },
+    "task3-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task3-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2242,
+                "y": 790
+            }
+        },
+        "next": [
+            "task3-3"
+        ],
+        "interrupt": [
+            "task3-2"
+        ]
+    },
+    "task3-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storybag.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2529,
+                "y": 786
+            }
+        },
+        "next": [
+            "task3-4"
+        ],
+        "interrupt": [
+            "task3-3"
+        ]
+    },
+    "task3-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storytalk.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2789,
+                "y": 786
+            }
+        },
+        "next": [
+            "task3-5"
+        ]
+    },
+    "task3-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storybag.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3060,
+                "y": 785
+            }
+        },
+        "next": [
+            "task3-6"
+        ]
+    },
+    "task4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1704,
+                "y": 1064
+            }
+        },
+        "next": [
+            "task4-1"
+        ]
+    },
+    "task4-1": {
+        "recognition": "TemplateMatch",
+        "action": "InputText",
+        "input_text": "팀장",
+        "template": [
+            "../image/task4-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1964,
+                "y": 1064
+            }
+        },
+        "next": [
+            "task4-2"
+        ]
+    },
+    "task4-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task4-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2224,
+                "y": 1064
+            }
+        },
+        "next": [
+            "task4-3"
+        ]
+    },
+    "task4-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task4-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2484,
+                "y": 1064
+            }
+        },
+        "next": [
+            "task5-1"
+        ]
+    },
+    "task3-6": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3320,
+                "y": 785
+            }
+        },
+        "interrupt": [
+            "task3-6"
+        ],
+        "next": [
+            "task4"
+        ]
+    },
+    "task5-1": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1688,
+                "y": 1317
+            }
+        },
+        "interrupt": [
+            "task5-1"
+        ],
+        "next": [
+            "task5-skip"
+        ]
+    },
+    "task5-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1976,
+                "y": 1312
+            }
+        },
+        "next": [
+            "task5-skip-select"
+        ]
+    },
+    "task5-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2245,
+                "y": 1309
+            }
+        },
+        "next": [
+            "task6-1"
+        ]
+    },
+    "task6-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task6-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1686,
+                "y": 1548
+            }
+        },
+        "next": [
+            "task6-2"
+        ]
+    },
+    "task6-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task6-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1946,
+                "y": 1548
+            }
+        },
+        "next": [
+            "task6-3"
+        ]
+    },
+    "task6-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task6-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2206,
+                "y": 1548
+            }
+        },
+        "next": [
+            "task6-swipe"
+        ]
+    },
+    "task6-swipe": {
+        "recognition": "TemplateMatch",
+        "action": "Swipe",
+        "template": [
+            "../image/storybag.png"
+        ],
+        "begin": [
+            300,
+            550,
+            0,
+            0
+        ],
+        "end": [
+            800,
+            550,
+            0,
+            0
+        ],
+        "duration": 3000,
+        "__yamaape": {
+            "position": {
+                "x": 2466,
+                "y": 1548
+            }
+        },
+        "next": [
+            "task7-skip"
+        ],
+        "interrupt": [
+            "task6-swipe"
+        ]
+    },
+    "task7-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1674,
+                "y": 1920
+            }
+        },
+        "next": [
+            "task7-skip-select"
+        ],
+        "interrupt": [
+            "task7-skip"
+        ]
+    },
+    "task7-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "post_delay": 20000,
+        "__yamaape": {
+            "position": {
+                "x": 1952,
+                "y": 1919
+            }
+        },
+        "next": [
+            "task8-skip"
+        ]
+    },
+    "task8-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2255,
+                "y": 1917
+            }
+        },
+        "next": [
+            "task87-skip-select"
+        ],
+        "interrupt": [
+            "task8-skip"
+        ]
+    },
+    "task87-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2539,
+                "y": 1919
+            }
+        },
+        "next": [
+            "battlespeed"
+        ]
+    },
+    "battlespeed": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battlespeed.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2799,
+                "y": 1919
+            }
+        },
+        "next": [
+            "battle1-fix"
+        ]
+    },
+    "task1-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task1-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2236,
+                "y": 297
+            }
+        },
+        "next": [
+            "task1-3"
+        ]
+    },
+    "battle1-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle1-1.png"
+        ],
+        "target": [
+            895,
+            622,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1674,
+                "y": 2174
+            }
+        },
+        "next": [
+            "battle1-2"
+        ]
+    },
+    "battle1-2": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            895,
+            622,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1950,
+                "y": 2169
+            }
+        },
+        "interrupt": [
+            "battle1-2"
+        ],
+        "next": [
+            "battle1-3"
+        ]
+    },
+    "battle1-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle1-3.png"
+        ],
+        "target": [
+            1111,
+            615,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2253,
+                "y": 2166
+            }
+        },
+        "next": [
+            "battle1-4"
+        ]
+    },
+    "battle1-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle1-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2513,
+                "y": 2166
+            }
+        },
+        "next": [
+            "battle1-5"
+        ]
+    },
+    "battle1-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle1-5.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2773,
+                "y": 2166
+            }
+        },
+        "next": [
+            "battle1-6"
+        ]
+    },
+    "battle1-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle1-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3057,
+                "y": 2163
+            }
+        },
+        "next": [
+            "battle1-7"
+        ]
+    },
+    "battle1-7": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle1-7.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3317,
+                "y": 2163
+            }
+        },
+        "next": [
+            "battle1-8"
+        ]
+    },
+    "battle1-8": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle1-8.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3577,
+                "y": 2163
+            }
+        },
+        "next": [
+            "task9-1"
+        ]
+    },
+    "task9-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skiplock.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1677,
+                "y": 2411
+            }
+        },
+        "interrupt": [
+            "task9-1"
+        ],
+        "next": [
+            "task9-skip"
+        ]
+    },
+    "task9-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1944,
+                "y": 2417
+            }
+        },
+        "interrupt": [
+            "task9-skip"
+        ],
+        "next": [
+            "task9-skip-select"
+        ]
+    },
+    "task9-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "post_delay": 5000,
+        "__yamaape": {
+            "position": {
+                "x": 2245,
+                "y": 2411
+            }
+        },
+        "next": [
+            "task10-1"
+        ]
+    },
+    "task10-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skiplock.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1673,
+                "y": 2649
+            }
+        },
+        "interrupt": [
+            "task10-1"
+        ],
+        "next": [
+            "task10-2"
+        ]
+    },
+    "task10-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storytalk.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1933,
+                "y": 2649
+            }
+        },
+        "next": [
+            "task10-3"
+        ]
+    },
+    "task10-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skiplock.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2217,
+                "y": 2651
+            }
+        },
+        "interrupt": [
+            "task10-3"
+        ],
+        "next": [
+            "task10-4"
+        ]
+    },
+    "task10-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storytalk.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2496,
+                "y": 2650
+            }
+        },
+        "next": [
+            "task10-5"
+        ]
+    },
+    "task10-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skiplock.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2773,
+                "y": 2645
+            }
+        },
+        "interrupt": [
+            "task10-5"
+        ],
+        "next": [
+            "task10-skip"
+        ]
+    },
+    "task10-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3050,
+                "y": 2644
+            }
+        },
+        "next": [
+            "task10-skip-select"
+        ],
+        "interrupt": [
+            "task10-skip"
+        ]
+    },
+    "task10-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "post_delay": 5000,
+        "__yamaape": {
+            "position": {
+                "x": 3323,
+                "y": 2644
+            }
+        },
+        "next": [
+            "task11-1"
+        ]
+    },
+    "task11-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skiplock.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1676,
+                "y": 2904
+            }
+        },
+        "interrupt": [
+            "task11-1"
+        ],
+        "next": [
+            "task11-skip"
+        ]
+    },
+    "task11-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1944,
+                "y": 2905
+            }
+        },
+        "interrupt": [
+            "task11-skip"
+        ],
+        "next": [
+            "task11-skip-select"
+        ]
+    },
+    "task11-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "post_delay": 7000,
+        "__yamaape": {
+            "position": {
+                "x": 2224,
+                "y": 2901
+            }
+        },
+        "next": [
+            "battle2-1"
+        ]
+    },
+    "battle2-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle2-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1676,
+                "y": 3167
+            }
+        },
+        "next": [
+            "battle2-2"
+        ],
+        "interrupt": [
+            "battle2-1"
+        ]
+    },
+    "battle2-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle2-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1936,
+                "y": 3167
+            }
+        },
+        "interrupt": [
+            "battle2-2"
+        ],
+        "next": [
+            "battle2-3"
+        ]
+    },
+    "battle2-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle2-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2196,
+                "y": 3167
+            }
+        },
+        "interrupt": [
+            "battle2-3"
+        ],
+        "next": [
+            "battle2-4"
+        ]
+    },
+    "battle2-4": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            151,
+            327,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2456,
+                "y": 3167
+            }
+        },
+        "next": [
+            "battle2-5"
+        ],
+        "interrupt": [
+            "battle2-4"
+        ]
+    },
+    "battle2-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle2-5.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2710,
+                "y": 3168
+            }
+        },
+        "interrupt": [
+            "battle2-5"
+        ],
+        "next": [
+            "battle2-6"
+        ]
+    },
+    "battle2-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battlespeed2.png"
+        ],
+        "target": [
+            888,
+            630,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2970,
+                "y": 3168
+            }
+        },
+        "interrupt": [
+            "battle2-6"
+        ],
+        "next": [
+            "task12-skip"
+        ]
+    },
+    "task12-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1680,
+                "y": 3392
+            }
+        },
+        "next": [
+            "task12-skip-select"
+        ],
+        "interrupt": [
+            "task12-skip"
+        ]
+    },
+    "task12-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1940,
+                "y": 3392
+            }
+        },
+        "next": [
+            "task13-1"
+        ]
+    },
+    "task13-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task13-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1682,
+                "y": 3596
+            }
+        },
+        "next": [
+            "task13-2"
+        ]
+    },
+    "task13-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skiplock.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1942,
+                "y": 3596
+            }
+        },
+        "interrupt": [
+            "task13-2"
+        ],
+        "next": [
+            "task13-3"
+        ]
+    },
+    "task13-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storytalk.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2202,
+                "y": 3596
+            }
+        },
+        "interrupt": [
+            "task13-3"
+        ],
+        "next": [
+            "task13-4"
+        ]
+    },
+    "task13-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storybag.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2462,
+                "y": 3596
+            }
+        },
+        "interrupt": [
+            "task13-4"
+        ],
+        "next": [
+            "task13-skip"
+        ]
+    },
+    "task13-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2723,
+                "y": 3596
+            }
+        },
+        "next": [
+            "task13-skip-select"
+        ],
+        "interrupt": [
+            "task13-skip"
+        ]
+    },
+    "task13-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "post_delay": 8000,
+        "__yamaape": {
+            "position": {
+                "x": 2983,
+                "y": 3596
+            }
+        },
+        "next": [
+            "task14-skip"
+        ]
+    },
+    "task14-skip": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1686,
+                "y": 3855
+            }
+        },
+        "next": [
+            "task14-skip-select"
+        ],
+        "interrupt": [
+            "task14-skip"
+        ]
+    },
+    "task14-skip-select": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/skip-select.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1948,
+                "y": 3857
+            }
+        },
+        "next": [
+            "task15-1"
+        ]
+    },
+    "task15-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task15-1.png"
+        ],
+        "timeout": 1000,
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1685,
+                "y": 4066
+            }
+        },
+        "next": [
+            "task15-2"
+        ]
+    },
+    "task15-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task15-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1945,
+                "y": 4066
+            }
+        },
+        "next": [
+            "task15-3"
+        ]
+    },
+    "task15-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task15-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2205,
+                "y": 4066
+            }
+        },
+        "interrupt": [
+            "task15-3"
+        ],
+        "next": [
+            "task15-4"
+        ]
+    },
+    "task15-4": {
+        "recognition": "TemplateMatch",
+        "action": "Swipe",
+        "template": [
+            "../image/task15-4.png"
+        ],
+        "begin": [
+            852,
+            180,
+            0,
+            0
+        ],
+        "end": [
+            852,
+            560,
+            0,
+            0
+        ],
+        "duration": 2000,
+        "__yamaape": {
+            "position": {
+                "x": 2465,
+                "y": 4066
+            }
+        },
+        "next": [
+            "task15-5"
+        ]
+    },
+    "task15-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task15-5.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2725,
+                "y": 4066
+            }
+        },
+        "next": [
+            "task16-1"
+        ]
+    },
+    "task16-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storylog.png"
+        ],
+        "target": [
+            661,
+            583,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1677,
+                "y": 4349
+            }
+        },
+        "interrupt": [
+            "task16-1"
+        ],
+        "next": [
+            "task16-2"
+        ]
+    },
+    "task16-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task16-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1937,
+                "y": 4349
+            }
+        },
+        "interrupt": [
+            "task16-2"
+        ],
+        "next": [
+            "task16-3"
+        ]
+    },
+    "task16-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task16-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2197,
+                "y": 4349
+            }
+        },
+        "next": [
+            "task16-4"
+        ],
+        "interrupt": [
+            "task16-3"
+        ]
+    },
+    "task16-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task16-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2457,
+                "y": 4349
+            }
+        },
+        "next": [
+            "task16-5"
+        ]
+    },
+    "task16-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task16-5.png"
+        ],
+        "target": [
+            233,
+            316,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2717,
+                "y": 4349
+            }
+        },
+        "interrupt": [
+            "task16-5"
+        ],
+        "next": [
+            "task16-6"
+        ]
+    },
+    "task16-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task16-6.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2977,
+                "y": 4349
+            }
+        },
+        "next": [
+            "task16-7"
+        ]
+    },
+    "task16-7": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task16-7.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3237,
+                "y": 4349
+            }
+        },
+        "next": [
+            "task16-8"
+        ],
+        "interrupt": [
+            "task16-7"
+        ]
+    },
+    "task16-8": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task16-8.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3497,
+                "y": 4349
+            }
+        },
+        "next": [
+            "battle3-1"
+        ],
+        "interrupt": [
+            "task16-8"
+        ]
+    },
+    "battle3-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battlespeed2.png"
+        ],
+        "target": [
+            888,
+            630,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1680,
+                "y": 4587
+            }
+        },
+        "next": [
+            "battle3-2"
+        ],
+        "interrupt": [
+            "battle3-1"
+        ]
+    },
+    "battle3-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle3-2.png"
+        ],
+        "target": [
+            39,
+            306,
+            0,
+            0
+        ],
+        "post_delay": 2000,
+        "__yamaape": {
+            "position": {
+                "x": 1940,
+                "y": 4587
+            }
+        },
+        "next": [
+            "battle3-3"
+        ]
+    },
+    "battle3-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle3-3.png"
+        ],
+        "post_delay": 2000,
+        "__yamaape": {
+            "position": {
+                "x": 2200,
+                "y": 4587
+            }
+        },
+        "next": [
+            "battle3-4"
+        ]
+    },
+    "battle3-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle3-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2460,
+                "y": 4587
+            }
+        },
+        "next": [
+            "battle3-5"
+        ],
+        "interrupt": [
+            "battle3-4-fix"
+        ]
+    },
+    "battle3-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle3-5.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2720,
+                "y": 4587
+            }
+        },
+        "next": [
+            "battle3-6"
+        ],
+        "interrupt": [
+            "battle3-5"
+        ]
+    },
+    "battle3-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/battle3-6.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2980,
+                "y": 4587
+            }
+        },
+        "next": [
+            "battle3-7"
+        ]
+    },
+    "battle3-7": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            888,
+            630,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3240,
+                "y": 4587
+            }
+        },
+        "interrupt": [
+            "battle3-7"
+        ],
+        "next": [
+            "task17-2"
+        ]
+    },
+    "task17-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task17-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1945,
+                "y": 4866
+            }
+        },
+        "next": [
+            "task17-3"
+        ],
+        "interrupt": [
+            "task17-2"
+        ]
+    },
+    "task17-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task17-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2205,
+                "y": 4866
+            }
+        },
+        "next": [
+            "task17-4"
+        ],
+        "interrupt": [
+            "task17-3"
+        ]
+    },
+    "task17-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task17-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2465,
+                "y": 4866
+            }
+        },
+        "next": [
+            "task18-1"
+        ],
+        "interrupt": [
+            "task17-4"
+        ]
+    },
+    "task18-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1684,
+                "y": 5082
+            }
+        },
+        "next": [
+            "task18-2"
+        ]
+    },
+    "task18-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1944,
+                "y": 5082
+            }
+        },
+        "next": [
+            "task18-3"
+        ],
+        "interrupt": [
+            "task18-2"
+        ]
+    },
+    "task18-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2204,
+                "y": 5082
+            }
+        },
+        "interrupt": [
+            "task18-3"
+        ],
+        "next": [
+            "task18-4"
+        ]
+    },
+    "task18-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2464,
+                "y": 5082
+            }
+        },
+        "interrupt": [
+            "task18-4"
+        ],
+        "next": [
+            "task18-5"
+        ]
+    },
+    "task18-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-5.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2724,
+                "y": 5082
+            }
+        },
+        "next": [
+            "task18-6"
+        ],
+        "interrupt": [
+            "task18-5"
+        ]
+    },
+    "task18-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-6.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2984,
+                "y": 5082
+            }
+        },
+        "interrupt": [
+            "task18-6"
+        ],
+        "next": [
+            "task18-7"
+        ]
+    },
+    "task18-7": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-7.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3244,
+                "y": 5082
+            }
+        },
+        "next": [
+            "task18-8"
+        ]
+    },
+    "task18-8": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task18-8.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3504,
+                "y": 5082
+            }
+        },
+        "interrupt": [
+            "task18-8"
+        ],
+        "next": [
+            "task19-1"
+        ]
+    },
+    "task19-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task19-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1689,
+                "y": 5282
+            }
+        },
+        "next": [
+            "task19-2"
+        ],
+        "interrupt": [
+            "task19-1"
+        ]
+    },
+    "task19-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task19-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1949,
+                "y": 5282
+            }
+        },
+        "next": [
+            "task20-1"
+        ]
+    },
+    "task20-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task20-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1688,
+                "y": 5477
+            }
+        },
+        "next": [
+            "task20-2"
+        ],
+        "interrupt": [
+            "task20-1"
+        ]
+    },
+    "task20-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task20-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1948,
+                "y": 5477
+            }
+        },
+        "next": [
+            "task20-3"
+        ]
+    },
+    "task20-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task20-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2208,
+                "y": 5477
+            }
+        },
+        "next": [
+            "task20-4"
+        ]
+    },
+    "task20-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task20-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2468,
+                "y": 5477
+            }
+        },
+        "next": [
+            "task20-5"
+        ]
+    },
+    "task20-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task20-5.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2728,
+                "y": 5477
+            }
+        },
+        "next": [
+            "task20-6"
+        ],
+        "interrupt": [
+            "task20-5"
+        ]
+    },
+    "task20-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task20-6.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2988,
+                "y": 5477
+            }
+        },
+        "next": [
+            "task20-7"
+        ]
+    },
+    "task20-7": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task20-7.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3248,
+                "y": 5477
+            }
+        },
+        "next": [
+            "task21-1"
+        ]
+    },
+    "task21-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1683,
+                "y": 5671
+            }
+        },
+        "next": [
+            "task21-2"
+        ],
+        "interrupt": [
+            "task21-1"
+        ]
+    },
+    "task21-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1949,
+                "y": 5670
+            }
+        },
+        "next": [
+            "task21-3"
+        ]
+    },
+    "task21-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2209,
+                "y": 5670
+            }
+        },
+        "next": [
+            "task21-3-fix",
+            "task21-4"
+        ]
+    },
+    "task21-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2469,
+                "y": 5670
+            }
+        },
+        "interrupt": [
+            "task21-4"
+        ],
+        "next": [
+            "task21-5"
+        ]
+    },
+    "task21-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-4.png"
+        ],
+        "inverse": true,
+        "target": [
+            640,
+            367,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2729,
+                "y": 5670
+            }
+        },
+        "next": [
+            "task21-6"
+        ],
+        "interrupt": [
+            "task21-5"
+        ]
+    },
+    "task21-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-6.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2989,
+                "y": 5670
+            }
+        },
+        "next": [
+            "task21-7",
+            "task21-3"
+        ]
+    },
+    "task21-7": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-7.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3249,
+                "y": 5670
+            }
+        },
+        "next": [
+            "task21-3"
+        ]
+    },
+    "task21-8": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-8.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2834,
+                "y": 5978
+            }
+        },
+        "next": [
+            "task22-1"
+        ]
+    },
+    "task22-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task22-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1683,
+                "y": 6136
+            }
+        },
+        "next": [
+            "task22-2"
+        ]
+    },
+    "task22-2": {
+        "recognition": "TemplateMatch",
+        "action": "DoNothing",
+        "template": [
+            "../image/task22-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1943,
+                "y": 6136
+            }
+        }
+    },
+    "battle1-fix": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            895,
+            622,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3077,
+                "y": 1918
+            }
+        },
+        "next": [
+            "battle1-1"
+        ],
+        "interrupt": [
+            "battle1-fix"
+        ]
+    },
+    "battle3-4-fix": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            886,
+            630,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2720,
+                "y": 4743
+            }
+        }
+    },
+    "task21-3-fix": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task21-3-fix.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2490,
+                "y": 5992
+            }
+        },
+        "next": [
+            "task21-8"
+        ]
+    },
+    "restart-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart-1.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1251,
+                "y": -179
+            }
+        },
+        "next": [
+            "restarat-2"
+        ]
+    },
+    "restarat-2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart-2.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1511,
+                "y": -179
+            }
+        },
+        "next": [
+            "restart-3"
+        ]
+    },
+    "restart-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart-3.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 1771,
+                "y": -179
+            }
+        },
+        "next": [
+            "restart-4"
+        ]
+    },
+    "restart-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart-4.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2031,
+                "y": -179
+            }
+        },
+        "next": [
+            "restart-5"
+        ]
+    },
+    "restart-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart-5.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2291,
+                "y": -179
+            }
+        },
+        "next": [
+            "restart-6"
+        ]
+    },
+    "restart-6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart-6.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2551,
+                "y": -179
+            }
+        },
+        "next": [
+            "restart-7"
+        ]
+    },
+    "restart-7": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart-7.png"
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2811,
+                "y": -179
+            }
+        },
+        "next": [
+            "login"
+        ]
+    }
+}
