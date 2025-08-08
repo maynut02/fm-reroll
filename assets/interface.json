@@ -13,7 +13,7 @@
     ],
     "resource": [
         {
-            "name": "한국서버",
+            "name": "한국어",
             "path": [
                 "{PROJECT_DIR}/resource"
             ]
@@ -27,13 +27,13 @@
     },
     "task": [
         {
-            "name": "계정 선택 화면에서 시작",
-            "entry": "login",
+            "name": "시작",
+            "entry": "LoginStart",
             "doc": "계정 선택 화면에서 시작 / 해상도 1280x720 / 리세마라 예상 소요시간 20분 / 한국어만 지원"
         },
         {
-            "name": "요원 관리 화면에서 시작",
-            "entry": "restart-1",
+            "name": "재시작",
+            "entry": "Restart1",
             "doc": "요원 관리 화면에서 시작"
         }
     ],
