@@ -122,40 +122,11 @@
         ],
         "post_delay": 5000,
         "focus": "▶ 작업 완료 - 로그인",
+        "timeout": 60000,
         "__yamaape": {
             "position": {
                 "x": 3029,
                 "y": 63
-            }
-        },
-        "next": [
-            "Story1-1"
-        ]
-    },
-    "Story1-1": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/storybag.png"
-        ],
-        "roi": [
-            1186,
-            50,
-            1236,
-            80
-        ],
-        "target": [
-            614,
-            586,
-            0,
-            0
-        ],
-        "timeout": 60000,
-        "focus": "Story1-1",
-        "__yamaape": {
-            "position": {
-                "x": 2239,
-                "y": 478
             }
         },
         "next": [
@@ -2758,5 +2729,32 @@
         "next": [
             "LoginStart"
         ]
+    },
+    "Story1-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storybag.png"
+        ],
+        "roi": [
+            1186,
+            50,
+            1236,
+            80
+        ],
+        "target": [
+            614,
+            586,
+            0,
+            0
+        ],
+        "timeout": 60000,
+        "focus": "Story1-1",
+        "__yamaape": {
+            "position": {
+                "x": 2077,
+                "y": 479
+            }
+        }
     }
 }
