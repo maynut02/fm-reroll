@@ -2308,7 +2308,7 @@
         "template": [
             "../image/task6-2.png"
         ],
-        "pre_delay": 1000,
+        "pre_delay": 3000,
         "__yamaape": {
             "position": {
                 "x": 2478,
