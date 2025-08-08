@@ -857,6 +857,7 @@
         "template": [
             "../image/battle1-1.png"
         ],
+        "pre_delay": 1000,
         "__yamaape": {
             "position": {
                 "x": 2237,
