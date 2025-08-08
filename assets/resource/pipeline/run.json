@@ -151,6 +151,7 @@
             0
         ],
         "timeout": 60000,
+        "focus": "Story1-1",
         "__yamaape": {
             "position": {
                 "x": 2239,
@@ -170,6 +171,7 @@
             0,
             0
         ],
+        "focus": "Story1-2",
         "__yamaape": {
             "position": {
                 "x": 2492,
