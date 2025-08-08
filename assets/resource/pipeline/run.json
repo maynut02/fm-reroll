@@ -2608,6 +2608,9 @@
         },
         "next": [
             "Restart3"
+        ],
+        "interrupt": [
+            "Restart2"
         ]
     },
     "Restart3": {
