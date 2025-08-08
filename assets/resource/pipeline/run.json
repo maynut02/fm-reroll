@@ -150,6 +150,7 @@
             0,
             0
         ],
+        "timeout": 60000,
         "__yamaape": {
             "position": {
                 "x": 2239,
@@ -762,7 +763,6 @@
             0
         ],
         "duration": 3000,
-        "focus": "▶ 작업 완료 - Story4",
         "__yamaape": {
             "position": {
                 "x": 3290,
@@ -815,7 +815,7 @@
             0
         ],
         "post_delay": 15000,
-        "focus": "▶ 작업 완료 - Story5",
+        "focus": "▶ 작업 완료 - Story4, Story5",
         "__yamaape": {
             "position": {
                 "x": 2493,
@@ -1006,46 +1006,6 @@
             "Battle1-6"
         ]
     },
-    "Battle1-6": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            988,
-            615,
-            0,
-            0
-        ],
-        "post_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 3317,
-                "y": 2611
-            }
-        },
-        "next": [
-            "Battle1-7"
-        ]
-    },
-    "Battle1-7": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1146,
-            378,
-            0,
-            0
-        ],
-        "post_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 3589,
-                "y": 2611
-            }
-        },
-        "next": [
-            "Battle1-2"
-        ]
-    },
     "Story7-2": {
         "recognition": "DirectHit",
         "action": "Click",
@@ -1066,6 +1026,26 @@
         ],
         "interrupt": [
             "Story7-2"
+        ]
+    },
+    "Battle1-6": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            988,
+            615,
+            0,
+            0
+        ],
+        "post_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 3317,
+                "y": 2611
+            }
+        },
+        "next": [
+            "Battle1-7"
         ]
     },
     "Story7-skip": {
@@ -1091,6 +1071,26 @@
         ],
         "interrupt": [
             "Story7-skip"
+        ]
+    },
+    "Battle1-7": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1146,
+            378,
+            0,
+            0
+        ],
+        "post_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 3589,
+                "y": 2611
+            }
+        },
+        "next": [
+            "Battle1-2"
         ]
     },
     "Story7-skip2": {
