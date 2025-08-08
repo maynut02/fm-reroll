@@ -121,7 +121,6 @@
             0
         ],
         "post_delay": 5000,
-        "timeout": 60000,
         "focus": "▶ 작업 완료 - 로그인",
         "__yamaape": {
             "position": {
@@ -2018,6 +2017,7 @@
             0,
             0
         ],
+        "post_delay": 1000,
         "__yamaape": {
             "position": {
                 "x": 4302,
