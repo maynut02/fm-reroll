@@ -121,6 +121,7 @@
             0
         ],
         "post_delay": 5000,
+        "timeout": 60000,
         "focus": "▶ 작업 완료 - 로그인",
         "__yamaape": {
             "position": {
