@@ -1,7 +1,8 @@
 {
     "__yamaape_config_test": {
         "filename": "test",
-        "version": "v0.3.4"
+        "version": "v0.3.4",
+        "export": ""
     },
     "LoginStart": {
         "recognition": "DirectHit",
@@ -120,6 +121,7 @@
             0
         ],
         "post_delay": 5000,
+        "focus": "▶ 작업 완료 - 로그인",
         "__yamaape": {
             "position": {
                 "x": 3029,
@@ -358,6 +360,7 @@
         "template": [
             "../image/story1-8.png"
         ],
+        "focus": "▶ 작업 완료 - Story1",
         "__yamaape": {
             "position": {
                 "x": 4604,
@@ -412,11 +415,11 @@
                 "y": 872
             }
         },
-        "interrupt": [
-            "Story2-move"
-        ],
         "next": [
             "Story2-2"
+        ],
+        "interrupt": [
+            "Story2-move"
         ]
     },
     "Story2-2": {
@@ -519,6 +522,7 @@
             0
         ],
         "post_delay": 1000,
+        "focus": "▶ 작업 완료 - Story2",
         "__yamaape": {
             "position": {
                 "x": 2238,
@@ -579,10 +583,11 @@
             0
         ],
         "post_delay": 3000,
+        "focus": "▶ 작업 완료 - Name",
         "__yamaape": {
             "position": {
-                "x": 3018,
-                "y": 1292
+                "x": 3023,
+                "y": 1290
             }
         },
         "next": [
@@ -604,11 +609,11 @@
                 "y": 1562
             }
         },
-        "interrupt": [
-            "Story3-1"
-        ],
         "next": [
             "Story3-skip"
+        ],
+        "interrupt": [
+            "Story3-1"
         ]
     },
     "Story3-skip": {
@@ -650,6 +655,7 @@
             0
         ],
         "post_delay": 1000,
+        "focus": "▶ 작업 완료 - Story3",
         "__yamaape": {
             "position": {
                 "x": 2757,
@@ -756,17 +762,18 @@
             0
         ],
         "duration": 3000,
+        "focus": "▶ 작업 완료 - Story4",
         "__yamaape": {
             "position": {
                 "x": 3290,
                 "y": 1863
             }
         },
-        "interrupt": [
-            "Story4-move"
-        ],
         "next": [
             "Story5-skip"
+        ],
+        "interrupt": [
+            "Story4-move"
         ]
     },
     "Story5-skip": {
@@ -788,11 +795,11 @@
                 "y": 2159
             }
         },
-        "interrupt": [
-            "Story5-skip"
-        ],
         "next": [
             "Story5-skip2"
+        ],
+        "interrupt": [
+            "Story5-skip"
         ]
     },
     "Story5-skip2": {
@@ -808,6 +815,7 @@
             0
         ],
         "post_delay": 15000,
+        "focus": "▶ 작업 완료 - Story5",
         "__yamaape": {
             "position": {
                 "x": 2493,
@@ -838,11 +846,11 @@
                 "y": 2154
             }
         },
-        "interrupt": [
-            "Story6-skip"
-        ],
         "next": [
             "Story6-skip2"
+        ],
+        "interrupt": [
+            "Story6-skip"
         ]
     },
     "Story6-skip2": {
@@ -859,6 +867,7 @@
             0
         ],
         "post_delay": 20000,
+        "focus": "▶ 작업 완료 - Story6",
         "__yamaape": {
             "position": {
                 "x": 3033,
@@ -900,13 +909,13 @@
                 "y": 2436
             }
         },
-        "interrupt": [
-            "Battle1-2"
-        ],
         "next": [
             "Battle1-3",
             "Battle1-4",
             "Story7-1"
+        ],
+        "interrupt": [
+            "Battle1-2"
         ]
     },
     "Battle1-3": {
@@ -946,6 +955,35 @@
         },
         "next": [
             "Battle1-5"
+        ]
+    },
+    "Story7-1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/storyskiplock.png"
+        ],
+        "target": [
+            614,
+            586,
+            0,
+            0
+        ],
+        "roi": [
+            1170,
+            50,
+            1190,
+            80
+        ],
+        "focus": "▶ 작업 완료 - Battle1",
+        "__yamaape": {
+            "position": {
+                "x": 2233,
+                "y": 2889
+            }
+        },
+        "next": [
+            "Story7-2"
         ]
     },
     "Battle1-5": {
@@ -1008,34 +1046,6 @@
             "Battle1-2"
         ]
     },
-    "Story7-1": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/storyskiplock.png"
-        ],
-        "target": [
-            614,
-            586,
-            0,
-            0
-        ],
-        "roi": [
-            1170,
-            50,
-            1190,
-            80
-        ],
-        "__yamaape": {
-            "position": {
-                "x": 2233,
-                "y": 2889
-            }
-        },
-        "next": [
-            "Story7-2"
-        ]
-    },
     "Story7-2": {
         "recognition": "DirectHit",
         "action": "Click",
@@ -1051,11 +1061,11 @@
                 "y": 2889
             }
         },
-        "interrupt": [
-            "Story7-2"
-        ],
         "next": [
             "Story7-skip"
+        ],
+        "interrupt": [
+            "Story7-2"
         ]
     },
     "Story7-skip": {
@@ -1076,11 +1086,11 @@
                 "y": 2889
             }
         },
-        "interrupt": [
-            "Story7-skip"
-        ],
         "next": [
             "Story7-skip2"
+        ],
+        "interrupt": [
+            "Story7-skip"
         ]
     },
     "Story7-skip2": {
@@ -1098,6 +1108,7 @@
             0
         ],
         "post_delay": 5000,
+        "focus": "▶ 작업 완료 - Story7",
         "__yamaape": {
             "position": {
                 "x": 3035,
@@ -1123,12 +1134,12 @@
                 "y": 3177
             }
         },
-        "interrupt": [
-            "Story8-1"
-        ],
         "next": [
             "Story8-2",
             "Story8-skip"
+        ],
+        "interrupt": [
+            "Story8-1"
         ]
     },
     "Story8-2": {
@@ -1166,11 +1177,11 @@
                 "y": 3382
             }
         },
-        "interrupt": [
-            "Story8-skip"
-        ],
         "next": [
             "Story8-skip2"
+        ],
+        "interrupt": [
+            "Story8-skip"
         ]
     },
     "Story8-skip2": {
@@ -1189,6 +1200,7 @@
             0
         ],
         "post_delay": 1000,
+        "focus": "▶ 작업 완료 - Story8",
         "__yamaape": {
             "position": {
                 "x": 2878,
@@ -1263,6 +1275,7 @@
         ],
         "post_delay": 1000,
         "pre_delay": 1000,
+        "focus": "▶ 작업 완료 - Story9",
         "__yamaape": {
             "position": {
                 "x": 2845,
@@ -1288,11 +1301,11 @@
                 "y": 3990
             }
         },
-        "interrupt": [
-            "Battle2-1"
-        ],
         "next": [
             "Battle2-2"
+        ],
+        "interrupt": [
+            "Battle2-1"
         ]
     },
     "Battle2-2": {
@@ -1328,11 +1341,11 @@
                 "y": 3990
             }
         },
-        "interrupt": [
-            "Battle2-3"
-        ],
         "next": [
             "Battle2-4"
+        ],
+        "interrupt": [
+            "Battle2-3"
         ]
     },
     "Battle2-4": {
@@ -1367,11 +1380,11 @@
                 "y": 3990
             }
         },
-        "interrupt": [
-            "Battle2-5"
-        ],
         "next": [
             "Story10-skip"
+        ],
+        "interrupt": [
+            "Battle2-5"
         ]
     },
     "Story10-skip": {
@@ -1392,11 +1405,11 @@
                 "y": 4313
             }
         },
-        "interrupt": [
-            "Story10-skip"
-        ],
         "next": [
             "Story10-skip2"
+        ],
+        "interrupt": [
+            "Story10-skip"
         ]
     },
     "Story10-skip2": {
@@ -1415,6 +1428,7 @@
             0
         ],
         "post_delay": 2000,
+        "focus": "▶ 작업 완료 - Battle2, Story10",
         "__yamaape": {
             "position": {
                 "x": 2485,
@@ -1437,11 +1451,11 @@
                 "y": 4582
             }
         },
-        "interrupt": [
-            "Story11-1"
-        ],
         "next": [
             "Story11-2"
+        ],
+        "interrupt": [
+            "Story11-1"
         ]
     },
     "Story11-2": {
@@ -1459,11 +1473,11 @@
                 "y": 4582
             }
         },
-        "interrupt": [
-            "Story11-2"
-        ],
         "next": [
             "Story11-3"
+        ],
+        "interrupt": [
+            "Story11-2"
         ]
     },
     "Story11-3": {
@@ -1480,6 +1494,29 @@
             }
         },
         "next": [
+            "Story11-4"
+        ]
+    },
+    "Story11-4": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            614,
+            586,
+            1,
+            1
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 3027,
+                "y": 4578
+            }
+        },
+        "next": [
+            "Story11-3",
+            "Story12-skip"
+        ],
+        "interrupt": [
             "Story11-4"
         ]
     },
@@ -1524,6 +1561,7 @@
             0
         ],
         "post_delay": 13000,
+        "focus": "▶ 작업 완료 - Story11, Story12",
         "__yamaape": {
             "position": {
                 "x": 2483,
@@ -1575,6 +1613,7 @@
             0
         ],
         "post_delay": 5000,
+        "focus": "▶ 작업 완료 - Story13",
         "__yamaape": {
             "position": {
                 "x": 3023,
@@ -1619,6 +1658,7 @@
             0
         ],
         "post_delay": 3000,
+        "focus": "▶ 작업 완료 - Task1",
         "__yamaape": {
             "position": {
                 "x": 2481,
@@ -1644,11 +1684,11 @@
                 "y": 5120
             }
         },
-        "interrupt": [
-            "Task2-1"
-        ],
         "next": [
             "Task2-2"
+        ],
+        "interrupt": [
+            "Task2-1"
         ]
     },
     "Task2-2": {
@@ -1697,11 +1737,11 @@
                 "y": 5120
             }
         },
-        "interrupt": [
-            "Task2-3"
-        ],
         "next": [
             "Task3-1"
+        ],
+        "interrupt": [
+            "Task2-3"
         ]
     },
     "Task3-1": {
@@ -1722,11 +1762,11 @@
                 "y": 5507
             }
         },
-        "interrupt": [
-            "Task3-1"
-        ],
         "next": [
             "Task3-2"
+        ],
+        "interrupt": [
+            "Task3-1"
         ]
     },
     "Task3-2": {
@@ -1747,11 +1787,11 @@
                 "y": 5507
             }
         },
-        "interrupt": [
-            "Task3-2"
-        ],
         "next": [
             "Task3-3"
+        ],
+        "interrupt": [
+            "Task3-2"
         ]
     },
     "Task3-3": {
@@ -1787,11 +1827,11 @@
                 "y": 5507
             }
         },
-        "interrupt": [
-            "Task3-4"
-        ],
         "next": [
             "Battle3-1"
+        ],
+        "interrupt": [
+            "Task3-4"
         ]
     },
     "Battle3-1": {
@@ -1806,6 +1846,7 @@
             0,
             0
         ],
+        "focus": "▶ 작업 완료 - Task2, Task3",
         "__yamaape": {
             "position": {
                 "x": 2222,
@@ -1941,11 +1982,11 @@
                 "y": 5793
             }
         },
-        "interrupt": [
-            "Battle3-7"
-        ],
         "next": [
             "Battle3-8"
+        ],
+        "interrupt": [
+            "Battle3-7"
         ]
     },
     "Battle3-8": {
@@ -1980,11 +2021,11 @@
                 "y": 5793
             }
         },
-        "interrupt": [
-            "Battle3-9"
-        ],
         "next": [
             "Task4-1"
+        ],
+        "interrupt": [
+            "Battle3-9"
         ]
     },
     "Task4-1": {
@@ -2001,6 +2042,7 @@
         ],
         "pre_delay": 1000,
         "post_delay": 1000,
+        "focus": "▶ 작업 완료 - Battle3",
         "__yamaape": {
             "position": {
                 "x": 2216,
@@ -2021,6 +2063,7 @@
             0
         ],
         "post_delay": 3000,
+        "focus": "▶ 작업 완료 - Task4",
         "__yamaape": {
             "position": {
                 "x": 2493,
@@ -2239,11 +2282,11 @@
                 "y": 6400
             }
         },
-        "interrupt": [
-            "Task5-11"
-        ],
         "next": [
             "Task5-12"
+        ],
+        "interrupt": [
+            "Task5-11"
         ]
     },
     "Task5-12": {
@@ -2254,6 +2297,7 @@
         ],
         "pre_delay": 1000,
         "post_delay": 1000,
+        "focus": "▶ 작업 완료 - Task5",
         "__yamaape": {
             "position": {
                 "x": 5075,
@@ -2276,11 +2320,11 @@
                 "y": 6729
             }
         },
-        "interrupt": [
-            "Task6-1"
-        ],
         "next": [
             "Task6-2"
+        ],
+        "interrupt": [
+            "Task6-1"
         ]
     },
     "Task6-2": {
@@ -2347,6 +2391,7 @@
             "../image/task7-1.png"
         ],
         "pre_delay": 1000,
+        "focus": "▶ 작업 완료 - Task6",
         "__yamaape": {
             "position": {
                 "x": 2220,
@@ -2394,11 +2439,11 @@
                 "y": 7010
             }
         },
-        "interrupt": [
-            "Task7-3"
-        ],
         "next": [
             "Task7-4"
+        ],
+        "interrupt": [
+            "Task7-3"
         ]
     },
     "Task7-4": {
@@ -2409,6 +2454,7 @@
         ],
         "pre_delay": 1000,
         "post_delay": 1000,
+        "focus": "▶ 작업 완료 - Task7",
         "__yamaape": {
             "position": {
                 "x": 3000,
@@ -2462,28 +2508,6 @@
             "Task8-3"
         ]
     },
-    "Task8-3": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1222,
-            70,
-            0,
-            0
-        ],
-        "__yamaape": {
-            "position": {
-                "x": 2775,
-                "y": 7298
-            }
-        },
-        "interrupt": [
-            "Task8-3"
-        ],
-        "next": [
-            "Task8-2"
-        ]
-    },
     "Task8-4": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -2505,6 +2529,28 @@
         },
         "next": [
             "Task8-5"
+        ]
+    },
+    "Task8-3": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1222,
+            70,
+            0,
+            0
+        ],
+        "__yamaape": {
+            "position": {
+                "x": 2775,
+                "y": 7298
+            }
+        },
+        "next": [
+            "Task8-2"
+        ],
+        "interrupt": [
+            "Task8-3"
         ]
     },
     "Task8-5": {
@@ -2532,6 +2578,7 @@
             "../image/task8-6.png"
         ],
         "pre_delay": 1000,
+        "focus": "▶ 작업 완료 - Task8",
         "__yamaape": {
             "position": {
                 "x": 3293,
@@ -2698,6 +2745,7 @@
         ],
         "pre_delay": 500,
         "post_delay": 3000,
+        "focus": "▶ 작업 완료 - 계정 초기화",
         "__yamaape": {
             "position": {
                 "x": 3753,
@@ -2706,29 +2754,6 @@
         },
         "next": [
             "LoginStart"
-        ]
-    },
-    "Story11-4": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            614,
-            586,
-            1,
-            1
-        ],
-        "__yamaape": {
-            "position": {
-                "x": 3027,
-                "y": 4578
-            }
-        },
-        "next": [
-            "Story11-3",
-            "Story12-skip"
-        ],
-        "interrupt": [
-            "Story11-4"
         ]
     }
 }
