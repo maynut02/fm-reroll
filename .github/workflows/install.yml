@@ -104,7 +104,7 @@ jobs:
         uses: robinraju/release-downloader@v1
         with:
           repository: maynut02/MFAAvalonia-ko
-          fileName: "MFAAvalonia-ko-*-${{ steps.mfa_naming.outputs.mfa_os }}-${{ steps.mfa_naming.outputs.mfa_arch }}*"
+          fileName: "MFAAvalonia-*-${{ steps.mfa_naming.outputs.mfa_os }}-${{ steps.mfa_naming.outputs.mfa_arch }}*"
           latest: true
           out-file-path: "MFAAvalonia"
           extract: true
