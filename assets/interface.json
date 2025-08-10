@@ -140,16 +140,7 @@
             "cases": [
                 {
                     "name": "[6성 요원] 획득 시",
-                    "pipeline_override": {
-                        "Check1": {
-                            "template": [
-                                "../image/check/6성.png"
-                            ],
-                            "focus": [
-                                "▸ [6성 요원] 감지됨"
-                            ]
-                        }
-                    }
+                    "pipeline_override": {}
                 },
                 {
                     "name": "[용정] 획득 시",
@@ -160,6 +151,9 @@
                             ],
                             "focus": [
                                 "▸ [용정] 감지됨"
+                            ],
+                            "threshold": [
+                                0.7
                             ]
                         }
                     }
@@ -173,6 +167,9 @@
                             ],
                             "focus": [
                                 "▸ [월백] 감지됨"
+                            ],
+                            "threshold": [
+                                0.7
                             ]
                         }
                     }
