@@ -3579,5 +3579,72 @@
         "next": [
             "Login1"
         ]
+    },
+    "Start1": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "__yamaape": {
+            "position": {
+                "x": 588,
+                "y": -2017
+            }
+        },
+        "interrupt": [
+            "Start2"
+        ],
+        "next": [
+            "Start3"
+        ]
+    },
+    "Start2": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "post_delay": 1000,
+        "template": [
+            "../image/task/home.png"
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 860,
+                "y": -1946
+            }
+        }
+    },
+    "Start3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/task/4-2.png"
+        ],
+        "target": [
+            1251,
+            90,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1124,
+                "y": -2021
+            }
+        },
+        "next": [
+            "Restart4"
+        ]
+    },
+    "Start": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "__yamaape": {
+            "position": {
+                "x": 296,
+                "y": 336
+            }
+        },
+        "next": [
+            "Login1"
+        ]
     }
 }

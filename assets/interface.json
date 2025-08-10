@@ -1,10 +1,10 @@
 {
     "name": "신월동행 리세마라 with MAAFramework",
-    "version":  "1.0.0",
+    "version":  "2.0.0",
     "mirrorchyan_rid":  null,
     "mirrorchyan_multiplatform":  false,
     "url":  "https://github.com/maynut02/fm-reroll",
-    "custom_title": "FMREROLL - 신월동행 리세마라 with MAAFramework",
+    "custom_title": "신월동행 리세마라 매크로 with MAAFramework",
     "controller": [
         {
             "name": "安卓端",
@@ -28,22 +28,49 @@
     "task": [
         {
             "name": "시작",
-            "entry": "Login1",
-            "doc": "[로그인] 또는 [계정 선택] 화면에서 리세마라를 시작합니다.\n기존 게스트 계정은 자동으로 삭제됩니다.\n[픽업 배너] 옵션으로 픽업 배너를 선택할 수 있습니다.",
+            "entry": "Start",
+            "check": true,
+            "doc": "[로그인] 또는 [계정 선택] 화면에서 리세마라를 시작합니다.\n기존 게스트 계정은 자동으로 삭제됩니다.\n\n▸ [현재 화면] 옵션으로 현재 화면을 선택할 수 있습니다.\n▸ [픽업 배너] 옵션으로 픽업 배너를 선택할 수 있습니다.",
             "option": [
+                "현재 화면",
                 "픽업 배너"
             ]
         },
         {
             "name": "자동 재시작",
             "entry": "Restart1",
-            "doc": "해당 작업을 활성화하면 리세마라 종료 시 [종료 조건]을 확인하며, 조건을 만족하지 못할 시 자동으로 리세마라를 재시작합니다.",
+            "check": true,
+            "doc": "자동 재시작을 활성화하면 리세마라 종료 시 [종료 조건]을 확인합니다.\n조건을 만족하지 못할 시 자동으로 리세마라를 재시작합니다.\n조건을 만족할 때까지 리세마라를 반복해서 진행합니다.\n\n▸ [종료 조건] 옵션으로 종료 조건을 선택할 수 있습니다.",
             "option": [
                 "종료 조건"
             ]
         }
     ],
     "option": {
+        "현재 화면": {
+            "cases": [
+                {
+                    "name": "로그인 화면",
+                    "pipeline_override": {
+                        "Start": {
+                            "next": [
+                                "Login1"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "인게임 화면",
+                    "pipeline_override": {
+                        "Start": {
+                            "next": [
+                                "Start1"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
         "픽업 배너": {
             "cases": [
                 {
