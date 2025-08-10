@@ -1153,7 +1153,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -1319,7 +1322,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -1409,7 +1415,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -1711,7 +1720,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -1873,7 +1885,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -1955,7 +1970,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -2141,7 +2159,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -2359,7 +2380,10 @@
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/story/skip.png"
+            "../image/story/skip.png",
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
@@ -2439,7 +2463,9 @@
         "action": "Click",
         "template": [
             "../image/story/skip.png",
-            "../image/story/skip1.png"
+            "../image/story/skip1.png",
+            "../image/story/skip2.png",
+            "../image/story/skip4.png"
         ],
         "target": [
             1204,
