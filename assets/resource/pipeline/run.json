@@ -3629,23 +3629,6 @@
             "Restart3"
         ]
     },
-    "Restart1": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
-        "focus": "▸ 종료 조건 확인",
-        "__yamaape": {
-            "position": {
-                "x": 599,
-                "y": -1201
-            }
-        },
-        "next": [
-            "Check1"
-        ],
-        "interrupt": [
-            "Restart2"
-        ]
-    },
     "Check1": {
         "recognition": "TemplateMatch",
         "action": "DoNothing",
@@ -3742,6 +3725,37 @@
         },
         "next": [
             "Login1"
+        ]
+    },
+    "Restart1": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "focus": "▸ 종료 조건 확인",
+        "post_delay": 3000,
+        "__yamaape": {
+            "position": {
+                "x": 432,
+                "y": -1204
+            }
+        },
+        "next": [
+            "Restart1-fix"
+        ]
+    },
+    "Restart1-fix": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "__yamaape": {
+            "position": {
+                "x": 716,
+                "y": -1203
+            }
+        },
+        "next": [
+            "Check1"
+        ],
+        "interrupt": [
+            "Restart2"
         ]
     },
     "TaskEnd": {
