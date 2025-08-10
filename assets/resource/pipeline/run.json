@@ -414,6 +414,29 @@
             "Restart3"
         ]
     },
+    "LoginC-4": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/login/C-4.png"
+        ],
+        "target": [
+            783,
+            457,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2183,
+                "y": -276
+            }
+        },
+        "next": [
+            "LoginC-5"
+        ]
+    },
     "Story1-3": {
         "recognition": "TemplateMatch",
         "action": "Swipe",
@@ -501,27 +524,55 @@
             "Story1-5"
         ]
     },
-    "LoginC-4": {
+    "Restart4": {
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/login/C-4.png"
+            "../image/restart/4.png"
         ],
         "target": [
-            783,
-            457,
+            1107,
+            306,
             0,
             0
         ],
         "pre_delay": 1000,
         "__yamaape": {
             "position": {
-                "x": 2183,
-                "y": -276
+                "x": 1519,
+                "y": -1121
             }
         },
         "next": [
-            "LoginC-5"
+            "Restart5",
+            "Restart5-B"
+        ]
+    },
+    "Story1-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/story/1-4.png"
+        ],
+        "pre_delay": 500,
+        "target": [
+            1186,
+            586,
+            0,
+            0
+        ],
+        "timeout": 240000,
+        "__yamaape": {
+            "position": {
+                "x": 2055,
+                "y": 1081
+            }
+        },
+        "next": [
+            "Story1-6"
+        ],
+        "interrupt": [
+            "Story1-5-click"
         ]
     },
     "LoginC-5": {
@@ -560,33 +611,6 @@
         "next": [
             "Login2-1",
             "Login2-2"
-        ]
-    },
-    "Story1-5": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/story/1-4.png"
-        ],
-        "pre_delay": 500,
-        "target": [
-            1186,
-            586,
-            0,
-            0
-        ],
-        "timeout": 240000,
-        "__yamaape": {
-            "position": {
-                "x": 2055,
-                "y": 1081
-            }
-        },
-        "next": [
-            "Story1-6"
-        ],
-        "interrupt": [
-            "Story1-5-click"
         ]
     },
     "Story1-6": {
@@ -2820,7 +2844,7 @@
             "../image/task/3-4.png"
         ],
         "pre_delay": 1500,
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 1502,
@@ -2840,7 +2864,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 1762,
@@ -2860,7 +2884,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 2022,
@@ -2880,7 +2904,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 2282,
@@ -2900,7 +2924,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 2542,
@@ -2920,7 +2944,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 2802,
@@ -2940,7 +2964,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 3062,
@@ -2960,7 +2984,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 3321,
@@ -2980,7 +3004,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 3581,
@@ -3000,7 +3024,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 3841,
@@ -3020,7 +3044,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "__yamaape": {
             "position": {
                 "x": 4101,
@@ -3431,29 +3455,6 @@
             "Restart3"
         ]
     },
-    "Restart4": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/4.png"
-        ],
-        "target": [
-            1107,
-            306,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 1519,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Restart5"
-        ]
-    },
     "Restart5": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -3474,7 +3475,31 @@
             }
         },
         "next": [
-            "Restart6"
+            "Restart6",
+            "Restart6-B"
+        ]
+    },
+    "Restart6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/6.png"
+        ],
+        "target": [
+            453,
+            637,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2039,
+                "y": -1121
+            }
+        },
+        "next": [
+            "Restart7"
         ]
     },
     "Restart1": {
@@ -3524,29 +3549,6 @@
                 "y": -1353
             }
         }
-    },
-    "Restart6": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/6.png"
-        ],
-        "target": [
-            453,
-            637,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 2039,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Restart7"
-        ]
     },
     "Restart7": {
         "recognition": "TemplateMatch",
@@ -3660,6 +3662,53 @@
         },
         "next": [
             "Login1"
+        ]
+    },
+    "Restart5-B": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/5-B.png"
+        ],
+        "target": [
+            722,
+            475,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1772,
+                "y": -880
+            }
+        },
+        "next": [
+            "Restart6-B",
+            "Restart6"
+        ]
+    },
+    "Restart6-B": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/6-B.png"
+        ],
+        "target": [
+            528,
+            662,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2040,
+                "y": -878
+            }
+        },
+        "next": [
+            "Restart7"
         ]
     },
     "TaskEnd": {
