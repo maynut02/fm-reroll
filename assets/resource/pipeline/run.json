@@ -507,6 +507,29 @@
             "Restart4"
         ]
     },
+    "LoginC-5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/login/C-5.png"
+        ],
+        "target": [
+            625,
+            464,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2441,
+                "y": -277
+            }
+        },
+        "next": [
+            "LoginA-2"
+        ]
+    },
     "Story1-4": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -548,6 +571,21 @@
             "Restart5-B"
         ]
     },
+    "LoginA-2": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "post_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2710,
+                "y": -247
+            }
+        },
+        "next": [
+            "Login2-1",
+            "Login2-2"
+        ]
+    },
     "Story1-5": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -575,42 +613,52 @@
             "Story1-5-click"
         ]
     },
-    "LoginC-5": {
+    "Restart5": {
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/login/C-5.png"
+            "../image/restart/5.png"
         ],
         "target": [
-            625,
-            464,
+            762,
+            525,
             0,
             0
         ],
         "pre_delay": 1000,
         "__yamaape": {
             "position": {
-                "x": 2441,
-                "y": -277
+                "x": 1779,
+                "y": -1121
             }
         },
         "next": [
-            "LoginA-2"
+            "Restart6",
+            "Restart6-B"
         ]
     },
-    "LoginA-2": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
-        "post_delay": 1000,
+    "Restart5-B": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/5-B.png"
+        ],
+        "target": [
+            722,
+            475,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
         "__yamaape": {
             "position": {
-                "x": 2710,
-                "y": -247
+                "x": 1772,
+                "y": -880
             }
         },
         "next": [
-            "Login2-1",
-            "Login2-2"
+            "Restart6-B",
+            "Restart6"
         ]
     },
     "Story1-6": {
@@ -649,6 +697,52 @@
                 "y": 1202
             }
         }
+    },
+    "Restart6": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/6.png"
+        ],
+        "target": [
+            453,
+            637,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2039,
+                "y": -1121
+            }
+        },
+        "next": [
+            "Restart7"
+        ]
+    },
+    "Restart6-B": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/6-B.png"
+        ],
+        "target": [
+            528,
+            662,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2040,
+                "y": -878
+            }
+        },
+        "next": [
+            "Restart7"
+        ]
     },
     "Story1-7": {
         "recognition": "TemplateMatch",
@@ -695,6 +789,29 @@
             }
         }
     },
+    "Restart7": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/7.png"
+        ],
+        "target": [
+            758,
+            460,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 2299,
+                "y": -1121
+            }
+        },
+        "next": [
+            "Restart8"
+        ]
+    },
     "Story2-1": {
         "recognition": "DirectHit",
         "action": "DoNothing",
@@ -707,6 +824,30 @@
         },
         "next": [
             "Story2-2"
+        ]
+    },
+    "Restart8": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/8.png"
+        ],
+        "target": [
+            622,
+            460,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "post_delay": 3000,
+        "__yamaape": {
+            "position": {
+                "x": 2559,
+                "y": -1121
+            }
+        },
+        "next": [
+            "Login1"
         ]
     },
     "Story2-2": {
@@ -2285,6 +2426,9 @@
         },
         "next": [
             "Story11-skip"
+        ],
+        "interrupt": [
+            "Story11-1-fix"
         ]
     },
     "Story11-skip": {
@@ -3455,53 +3599,6 @@
             "Restart3"
         ]
     },
-    "Restart5": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/5.png"
-        ],
-        "target": [
-            762,
-            525,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 1779,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Restart6",
-            "Restart6-B"
-        ]
-    },
-    "Restart6": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/6.png"
-        ],
-        "target": [
-            453,
-            637,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 2039,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Restart7"
-        ]
-    },
     "Restart1": {
         "recognition": "DirectHit",
         "action": "DoNothing",
@@ -3549,53 +3646,6 @@
                 "y": -1353
             }
         }
-    },
-    "Restart7": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/7.png"
-        ],
-        "target": [
-            758,
-            460,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 2299,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Restart8"
-        ]
-    },
-    "Restart8": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/8.png"
-        ],
-        "target": [
-            622,
-            460,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "post_delay": 3000,
-        "__yamaape": {
-            "position": {
-                "x": 2559,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Login1"
-        ]
     },
     "Start1": {
         "recognition": "DirectHit",
@@ -3664,60 +3714,27 @@
             "Login1"
         ]
     },
-    "Restart5-B": {
+    "Story11-1-fix": {
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/restart/5-B.png"
-        ],
-        "target": [
-            722,
-            475,
-            0,
-            0
+            "../image/story/talk.png"
         ],
         "pre_delay": 1000,
         "__yamaape": {
             "position": {
-                "x": 1772,
-                "y": -880
+                "x": 1008,
+                "y": 6253
             }
-        },
-        "next": [
-            "Restart6-B",
-            "Restart6"
-        ]
-    },
-    "Restart6-B": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/6-B.png"
-        ],
-        "target": [
-            528,
-            662,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 2040,
-                "y": -878
-            }
-        },
-        "next": [
-            "Restart7"
-        ]
+        }
     },
     "TaskEnd": {
         "recognition": "DirectHit",
         "action": "StopTask",
         "__yamaape": {
             "position": {
-                "x": 3057,
-                "y": 9293
+                "x": 3122,
+                "y": 9296
             }
         }
     }
