@@ -252,12 +252,13 @@
         "timeout": 120000,
         "__yamaape": {
             "position": {
-                "x": 755,
-                "y": 1081
+                "x": 388,
+                "y": 1115
             }
         },
         "next": [
-            "Story1-2"
+            "Story1-2",
+            "Story1-1-fix"
         ]
     },
     "Story1-2": {
@@ -3645,6 +3646,23 @@
         },
         "next": [
             "Login1"
+        ]
+    },
+    "Story1-1-fix": {
+        "recognition": "TemplateMatch",
+        "action": "DoNothing",
+        "template": [
+            "../image/task/4-2.png"
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 702,
+                "y": 918
+            }
+        },
+        "next": [
+            "Restart3"
         ]
     }
 }
