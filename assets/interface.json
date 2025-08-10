@@ -28,16 +28,94 @@
     "task": [
         {
             "name": "시작",
-            "entry": "LoginStart",
-            "doc": "계정 선택 화면에서 시작 / 해상도 1280x720 / 리세마라 예상 소요시간 20분 / 한국어만 지원"
+            "entry": "Login1",
+            "doc": "[로그인] 또는 [계정 선택] 화면에서 리세마라를 시작합니다.\n기존 게스트 계정은 자동으로 삭제됩니다.\n[픽업 배너] 옵션으로 픽업 배너를 선택할 수 있습니다.",
+            "option": [
+                "픽업 배너"
+            ]
         },
         {
-            "name": "재시작",
+            "name": "자동 재시작",
             "entry": "Restart1",
-            "doc": "요원 관리 화면에서 시작"
+            "doc": "해당 작업을 활성화하면 리세마라 종료 시 [종료 조건]을 확인하며, 조건을 만족하지 못할 시 자동으로 리세마라를 재시작합니다.",
+            "option": [
+                "종료 조건"
+            ]
         }
     ],
     "option": {
-        
+        "픽업 배너": {
+            "cases": [
+                {
+                    "name": "[용정] 심야의 별",
+                    "pipeline_override": {
+                        "Roll1-2": {
+                            "template": [
+                                "../image/roll/용정배너.png"
+                            ],
+                            "focus": [
+                                "▸ [용정] 심야의 별"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "[월백] 스킨 핫라인",
+                    "pipeline_override": {
+                        "Roll1-2": {
+                            "template": [
+                                "../image/roll/월백배너.png"
+                            ],
+                            "focus": [
+                                "▸ [월백] 스킨 핫라인"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "종료 조건": {
+            "cases": [
+                {
+                    "name": "[6성 요원] 획득 시",
+                    "pipeline_override": {
+                        "Check1": {
+                            "template": [
+                                "../image/check/6성.png"
+                            ],
+                            "focus": [
+                                "▸ [6성 요원] 감지됨"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "[용정] 획득 시",
+                    "pipeline_override": {
+                        "Check1": {
+                            "template": [
+                                "../image/check/용정.png"
+                            ],
+                            "focus": [
+                                "▸ [용정] 감지됨"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "[월백] 획득 시 (현재 사용 불가)",
+                    "pipeline_override": {
+                        "Check1": {
+                            "template": [
+                                ""
+                            ],
+                            "focus": [
+                                "▸ [월백] 감지됨"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
     }
 }
