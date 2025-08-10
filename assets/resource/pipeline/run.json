@@ -331,6 +331,52 @@
             "Story1-1-fix"
         ]
     },
+    "LoginC-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/login/C-3.png"
+        ],
+        "target": [
+            521,
+            669,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1900,
+                "y": -401
+            }
+        },
+        "next": [
+            "LoginC-4"
+        ]
+    },
+    "LoginD-3": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/login/D-3.png"
+        ],
+        "target": [
+            449,
+            637,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1903,
+                "y": -160
+            }
+        },
+        "next": [
+            "LoginC-4"
+        ]
+    },
     "Story1-2": {
         "recognition": "TemplateMatch",
         "action": "DoNothing",
@@ -414,50 +460,45 @@
             }
         }
     },
-    "LoginC-3": {
+    "Restart3": {
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/login/C-3.png"
+            "../image/task/4-2.png"
         ],
         "target": [
-            521,
-            669,
+            1251,
+            90,
             0,
             0
         ],
         "pre_delay": 1000,
+        "focus": "▸ 작업 재시작",
         "__yamaape": {
             "position": {
-                "x": 1900,
-                "y": -401
+                "x": 1259,
+                "y": -1121
             }
         },
         "next": [
-            "LoginC-4"
+            "Restart4"
         ]
     },
-    "LoginD-3": {
+    "Story1-4": {
         "recognition": "TemplateMatch",
         "action": "Click",
         "template": [
-            "../image/login/D-3.png"
+            "../image/story/1-4.png"
         ],
-        "target": [
-            449,
-            637,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
+        "pre_delay": 500,
         "__yamaape": {
             "position": {
-                "x": 1903,
-                "y": -160
+                "x": 1795,
+                "y": 1081
             }
         },
         "next": [
-            "LoginC-4"
+            "Story1-5"
         ]
     },
     "LoginC-4": {
@@ -519,23 +560,6 @@
         "next": [
             "Login2-1",
             "Login2-2"
-        ]
-    },
-    "Story1-4": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/story/1-4.png"
-        ],
-        "pre_delay": 500,
-        "__yamaape": {
-            "position": {
-                "x": 1795,
-                "y": 1081
-            }
-        },
-        "next": [
-            "Story1-5"
         ]
     },
     "Story1-5": {
@@ -824,7 +848,7 @@
             0,
             0
         ],
-        "pre_delay": 1000,
+        "post_delay": 1000,
         "__yamaape": {
             "position": {
                 "x": 751,
@@ -852,12 +876,8 @@
         }
     },
     "Name2": {
-        "recognition": "TemplateMatch",
+        "recognition": "DirectHit",
         "action": "InputText",
-        "template": [
-            "../image/name/2-1.png",
-            "../image/name/2-2.png"
-        ],
         "input_text": "팀장",
         "pre_delay": 1000,
         "post_delay": 1000,
@@ -1159,6 +1179,29 @@
         "on_error": [
             "Story4-skip-fix"
         ]
+    },
+    "Story4-5-swipe": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            140,
+            530,
+            0,
+            0
+        ],
+        "end": [
+            490,
+            530,
+            0,
+            0
+        ],
+        "duration": 3000,
+        "__yamaape": {
+            "position": {
+                "x": 2316,
+                "y": 2885
+            }
+        }
     },
     "Story4-ok": {
         "recognition": "TemplateMatch",
@@ -3369,29 +3412,6 @@
             }
         }
     },
-    "Story4-5-swipe": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            140,
-            530,
-            0,
-            0
-        ],
-        "end": [
-            490,
-            530,
-            0,
-            0
-        ],
-        "duration": 3000,
-        "__yamaape": {
-            "position": {
-                "x": 2316,
-                "y": 2885
-            }
-        }
-    },
     "Restart2": {
         "recognition": "TemplateMatch",
         "action": "Click",
@@ -3409,30 +3429,6 @@
         },
         "next": [
             "Restart3"
-        ]
-    },
-    "Restart3": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/task/4-2.png"
-        ],
-        "target": [
-            1251,
-            90,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "focus": "▸ 작업 재시작",
-        "__yamaape": {
-            "position": {
-                "x": 1259,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Restart4"
         ]
     },
     "Restart4": {
@@ -3456,6 +3452,29 @@
         },
         "next": [
             "Restart5"
+        ]
+    },
+    "Restart5": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/restart/5.png"
+        ],
+        "target": [
+            762,
+            525,
+            0,
+            0
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1779,
+                "y": -1121
+            }
+        },
+        "next": [
+            "Restart6"
         ]
     },
     "Restart1": {
@@ -3505,29 +3524,6 @@
                 "y": -1353
             }
         }
-    },
-    "Restart5": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/restart/5.png"
-        ],
-        "target": [
-            762,
-            525,
-            0,
-            0
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 1779,
-                "y": -1121
-            }
-        },
-        "next": [
-            "Restart6"
-        ]
     },
     "Restart6": {
         "recognition": "TemplateMatch",
@@ -3665,5 +3661,15 @@
         "next": [
             "Login1"
         ]
+    },
+    "TaskEnd": {
+        "recognition": "DirectHit",
+        "action": "StopTask",
+        "__yamaape": {
+            "position": {
+                "x": 3057,
+                "y": 9293
+            }
+        }
     }
 }
