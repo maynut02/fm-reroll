@@ -34,21 +34,15 @@
             "option": [
                 "현재 화면",
                 "픽업 배너",
+                "자동 재시작",
+                "종료 조건",
                 "직접 뽑기"
-            ]
-        },
-        {
-            "name": "자동 재시작",
-            "entry": "Restart1",
-            "check": true,
-            "doc": "자동 재시작을 활성화하면 리세마라 종료 시 [종료 조건]을 확인합니다.\n조건을 만족하지 못할 시 자동으로 리세마라를 재시작합니다.\n조건을 만족할 때까지 리세마라를 반복해서 진행합니다.\n조건을 만족하면 작업이 종료됩니다.\n\n▸ [종료 조건] 옵션으로 종료 조건을 선택할 수 있습니다.",
-            "option": [
-                "종료 조건"
             ]
         }
     ],
     "option": {
         "현재 화면": {
+            "doc": "",
             "cases": [
                 {
                     "name": "로그인 화면",
@@ -103,19 +97,14 @@
             ]
         },
         "직접 뽑기": {
+            "doc": "",
             "cases": [
                 {
-                    "name": "미적용",
-                    "pipeline_override": {
-                        "Roll1-1": {
-                            "next": [
-                                "Roll1-2"
-                            ]
-                        }
-                    }
+                    "name": "No",
+                    "pipeline_override": {}
                 },
                 {
-                    "name": "적용",
+                    "name": "Yes",
                     "pipeline_override": {
                         "Roll1-1": {
                             "next": [
@@ -123,6 +112,25 @@
                             ]
                         }
                     }
+                }
+            ]
+        },
+        "자동 재시작": {
+            "doc": "",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "RollEnd": {
+                            "next": [
+                                "Restart1"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {}
                 }
             ]
         },
