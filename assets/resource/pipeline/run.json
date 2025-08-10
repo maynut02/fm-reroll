@@ -1795,7 +1795,7 @@
         "template": [
             "../image/story/talk.png"
         ],
-        "pre_delay": 1000,
+        "pre_delay": 2000,
         "timeout": 180000,
         "__yamaape": {
             "position": {
@@ -1832,7 +1832,7 @@
         "template": [
             "../image/story/talk.png"
         ],
-        "pre_delay": 1000,
+        "pre_delay": 2000,
         "timeout": 240000,
         "__yamaape": {
             "position": {
@@ -2456,6 +2456,20 @@
         "next": [
             "Story11-ok"
         ]
+    },
+    "Story11-1-fix": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": [
+            "../image/story/talk.png"
+        ],
+        "pre_delay": 1000,
+        "__yamaape": {
+            "position": {
+                "x": 1008,
+                "y": 6253
+            }
+        }
     },
     "Story11-ok": {
         "recognition": "TemplateMatch",
@@ -3713,20 +3727,6 @@
         "next": [
             "Login1"
         ]
-    },
-    "Story11-1-fix": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "../image/story/talk.png"
-        ],
-        "pre_delay": 1000,
-        "__yamaape": {
-            "position": {
-                "x": 1008,
-                "y": 6253
-            }
-        }
     },
     "TaskEnd": {
         "recognition": "DirectHit",
