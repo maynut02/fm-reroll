@@ -223,7 +223,7 @@
                 {
                     "name": "2개 이상",
                     "pipeline_override": {
-                        "Check1": {
+                        "Check-count-1": {
                             "roi": [
                                 1046,
                                 72,
@@ -236,7 +236,7 @@
                 {
                     "name": "3개 이상",
                     "pipeline_override": {
-                        "Check1": {
+                        "Check-count-1": {
                             "roi": [
                                 732,
                                 302,
@@ -249,7 +249,7 @@
                 {
                     "name": "4개 이상",
                     "pipeline_override": {
-                        "Check1": {
+                        "Check-count-1": {
                             "roi": [
                                 891,
                                 302,
