@@ -164,7 +164,7 @@
                 {
                     "name": "[용정] 획득 시",
                     "pipeline_override": {
-                        "Check-char": {
+                        "Check-char-1": {
                             "template": [
                                 "../image/check/용정.png"
                             ]
@@ -174,7 +174,7 @@
                 {
                     "name": "[월백] 획득 시",
                     "pipeline_override": {
-                        "Check-char": {
+                        "Check-char-1": {
                             "template": [
                                 "../image/check/월백.png"
                             ]
@@ -184,7 +184,7 @@
                 {
                     "name": "[정천] 획득 시",
                     "pipeline_override": {
-                        "Check-char": {
+                        "Check-char-1": {
                             "template": [
                                 "../image/check/정천.png"
                             ]
