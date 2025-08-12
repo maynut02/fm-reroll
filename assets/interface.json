@@ -163,13 +163,7 @@
             "cases": [
                 {
                     "name": "[용정] 획득 시",
-                    "pipeline_override": {
-                        "Check-char-1": {
-                            "template": [
-                                "../image/check/용정.png"
-                            ]
-                        }
-                    }
+                    "pipeline_override": {}
                 },
                 {
                     "name": "[월백] 획득 시",
@@ -225,7 +219,7 @@
                     "pipeline_override": {
                         "Check-count-1": {
                             "roi": [
-                                1046,
+                                1052,
                                 72,
                                 174,
                                 240
@@ -238,7 +232,7 @@
                     "pipeline_override": {
                         "Check-count-1": {
                             "roi": [
-                                732,
+                                730,
                                 302,
                                 174,
                                 230
