@@ -66,6 +66,16 @@
                             ]
                         }
                     }
+                },
+                {
+                    "name": "전화실",
+                    "pipeline_override": {
+                        "Start": {
+                            "next": [
+                                "Story1-1"
+                            ]
+                        }
+                    }
                 }
             ]
         },
