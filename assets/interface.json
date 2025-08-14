@@ -83,6 +83,20 @@
             "doc": "원하는 픽업 배너를 선택할 수 있습니다.\n\n**[현재 픽업]**\n▸ [용정] 심야의 별 : 8/7 ~ 8/21\n▸ [월백] 스킨 핫라인 : 8/7 ~ 8/21",
             "cases": [
                 {
+                    "name": "[자회] 잿빛 가시",
+                    "pipeline_override": {
+                        "Roll1-2": {
+                            "template": [
+                                "../image/roll/자회배너1.png",
+                                "../image/roll/자회배너2.png"
+                            ],
+                            "focus": [
+                                "▸ [자회] 잿빛 가시"
+                            ]
+                        }
+                    }
+                },
+                {
                     "name": "[용정] 심야의 별",
                     "pipeline_override": {
                         "Roll1-2": {
@@ -169,8 +183,18 @@
             ]
         },
         "종료 조건(요원) 옵션": {
-            "doc": "**BETA**\n작업이 종료되는 요원 조건을 설정합니다.\n\n**[현재 픽업 요원]**\n▸ 용정\n▸ 월백",
+            "doc": "**BETA**\n작업이 종료되는 요원 조건을 설정합니다.",
             "cases": [
+                {
+                    "name": "[자회] 획득 시",
+                    "pipeline_override": {
+                        "Check-char-1": {
+                            "template": [
+                                "../image/check/자회.png"
+                            ]
+                        }
+                    }
+                },
                 {
                     "name": "[용정] 획득 시",
                     "pipeline_override": {}
